@@ -1,0 +1,43 @@
+Event	Latitude	Longitude	Elevation [m]	ID	Deposit type	Depth sed [m]	Mn [%]	Fe [%]	Ni [%]	Cu [%]	Co [%]	Ti [%]	Cd [mg/kg]	Mo [mg/kg]	Tl [mg/kg]	Zn [mg/kg]	Size	Shape	Texture	Samp type
+RP8OC75-46-03	9.3167	-150.8750	-4900	RP8OC75-46-03-1PIP7701	Mn nodule	0	19.3	11.60	0.77	0.49	0.27					610	3 cm	Polylobate	Rough to smooth	Nodule cross-section
+RP8OC75-46-03	9.3167	-150.8750	-4900	RP8OC75-46-03-1PIP7702	Mn nodule	0	25.6	9.70	1.12	0.71	0.34					900	1.5 cm	Polylobate	Rough to smooth	Whole nodule
+RP8OC75-46-03	9.3167	-150.8750	-4900	RP8OC75-46-03-1PIP7703	Mn nodule	0					0.28		11	413	194	830	4 cm	Polylobate	Rough to smooth	Fragments
+RP8OC75-46-03	9.3167	-150.8750	-4900	RP8OC75-46-03-1PIP7704	Mn nodule	0					0.27	0.44				830	3.5 cm	Polylobate	Rough to smooth	Fragments
+RP8OC75-51-34	11.7067	-139.1800	-4828	RP8OC75-51-34-1PIP7701	Mn nodule	0	26.8	2.91	1.23	1.27	0.15					1100	2 cm	Spheroidal	Rough botryoidal	Whole nodule
+RP8OC75-54-47	12.1733	-137.7350	-4833	RP8OC75-54-47-1PIP7701	Mn nodule	0	26.4	4.33	1.51	1.26	0.30					1100	3 cm		Rough botryoidal to smooth	Nodule cross-section
+RP8OC75-54-50	12.1420	-137.7670	-4978	RP8OC75-54-50-1PIP7701	Mn nodule	0	25.6	5.58	1.41	1.21	0.20					1300	5 cm	Spheroidal	Rough botryoidal	Nodule cross-section
+RP8OC75-57-57	15.2967	-125.9217	-4438	RP8OC75-57-57-1PIP7701	Mn nodule	0	25.3	7.41	1.35	0.93	0.33					1200	3 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-1-6	15.2317	-125.9733	-4380	RP8OC76-1-6-1PIP7701	Mn nodule	0	28.9	8.70	1.36	1.18	0.26					1600	4.1 cm	Discoidal	Smooth	Nodule cross-section
+RP8OC76-1-6	15.2317	-125.9733	-4380	RP8OC76-1-6-1PIP7702	Mn nodule	0	26.7	9.30	1.26	0.93	0.27					1600		Discoidal	Smooth	Nodule topside
+RP8OC76-1-6	15.2317	-125.9733	-4380	RP8OC76-1-6-1PIP7703	Mn nodule	0	26.5	7.80	1.27	1.09	0.22					1600		Discoidal	Smooth	Nodule underside
+RP8OC76-10-15	15.1900	-126.0367	-4516	RP8OC76-10-15-1PIP7701	Mn nodule	0	27.2	8.90	1.21	1.05	0.24					1400	4.9 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-10-15	15.1900	-126.0367	-4516	RP8OC76-10-15-1PIP7702	Mn nodule	0	26.3	8.80	1.12	0.86	0.26					1400		Discoidal	Rough	Nodule topside
+RP8OC76-10-15	15.1900	-126.0367	-4516	RP8OC76-10-15-1PIP7703	Mn nodule	0	25.9	7.70	1.11	1.04	0.22					2000		Discoidal	Rough	Nodule underside
+RP8OC76-11-16	15.1950	-126.0650	-4524	RP8OC76-11-16-1PIP7701	Mn nodule	0	27.3	7.40	1.30	1.24	0.27					1400	5.4 cm	Discoidal	Rough botryoidal	Nodule cross-section
+RP8OC76-11-16	15.1950	-126.0650	-4524	RP8OC76-11-16-1PIP7702	Mn nodule	0	27.1	6.20	1.37	1.34	0.19					1500		Discoidal	Rough botryoidal	Nodule topside
+RP8OC76-11-16	15.1950	-126.0650	-4524	RP8OC76-11-16-1PIP7703	Mn nodule	0	24.1	9.90	1.07	0.81	0.33					869		Discoidal	Rough botryoidal	Nodule underside
+RP8OC76-12-18	15.1930	-126.0980	-4451	RP8OC76-12-18-1PIP7701	Mn nodule	0	24.3	9.10	1.21	0.89	0.26					1000	2.8 cm	Discoidal	Rough botryoidal	Nodule cross-section
+RP8OC76-12-18	15.1930	-126.0980	-4451	RP8OC76-12-18-1PIP7702	Mn nodule	0	23.9	10.30	1.12	0.69	0.45					970		Discoidal	Rough botryoidal	Nodule topside
+RP8OC76-12-18	15.1930	-126.0980	-4451	RP8OC76-12-18-1PIP7703	Mn nodule	0	24.8	9.30	1.22	0.84	0.34					1100		Discoidal	Rough botryoidal	Nodule underside
+RP8OC76-13-19	15.1367	-126.1067	-4481	RP8OC76-13-19-1PIP7701	Mn nodule	0	21.5	9.40	0.95	0.74	0.23					940	3.6 cm	Discoidal	Rough botryoidal	Nodule cross-section
+RP8OC76-15-21	15.1400	-126.0450	-4501	RP8OC76-15-21-1PIP7701	Mn nodule	0	24.7	8.60	1.26	0.95	0.21					1200	2.5 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-16-22	15.1317	-125.9900	-4442	RP8OC76-16-22-1PIP7701	Mn nodule	0	21.8	10.60	1.04	0.61	0.34					770	2.7 cm	Discoidal	Smooth	Nodule cross-section
+RP8OC76-16-22	15.1317	-125.9900	-4442	RP8OC76-16-22-1PIP7702	Mn nodule	0	22.7	12.00	1.04	0.59	0.40					850		Discoidal	Smooth	Nodule topside
+RP8OC76-16-22	15.1317	-125.9900	-4442	RP8OC76-16-22-1PIP7703	Mn nodule	0	22.7	12.20	0.83	0.41	0.43					760		Discoidal	Smooth	Nodule underside
+RP8OC76-17-23	15.1383	-125.9550	-4376	RP8OC76-17-23-1PIP7701	Mn nodule	0	21.4	14.20	0.88	0.63	0.43					640	2.4 cm	Discoidal	Smooth	Nodule cross-section
+RP8OC76-17-23	15.1383	-125.9550	-4376	RP8OC76-17-23-1PIP7702	Mn nodule	0	17.0	7.60	1.02	0.62	0.33					1100		Discoidal	Smooth	Nodule topside
+RP8OC76-17-23	15.1383	-125.9550	-4376	RP8OC76-17-23-1PIP7703	Mn nodule	0	20.6	12.50	0.85	0.43	0.38					770		Discoidal	Smooth	Nodule underside
+RP8OC76-18-24	15.1050	-125.9567	-4426	RP8OC76-18-24-1PIP7701	Mn nodule	0	24.1	11.70	1.05	0.61	0.22					910	2.4 cm	Discoidal	Smooth	Nodule cross-section
+RP8OC76-19-25	15.1400	-126.0150	-4465	RP8OC76-19-25-1PIP7701	Mn nodule	0	26.8	9.30	1.31	1.17	0.23					1500	3.2 cm		Rough	Nodule cross-section
+RP8OC76-19-25	15.1400	-126.0150	-4465	RP8OC76-19-25-1PIP7702	Mn nodule	0	25.3	7.70	1.14	0.96	0.21					1600			Rough	Nodule topside
+RP8OC76-19-25	15.1400	-126.0150	-4465	RP8OC76-19-25-1PIP7703	Mn nodule	0	18.0	7.80	0.92	0.61	0.21					770			Rough	Nodule underside
+RP8OC76-2-7	15.2417	-126.0433	-4539	RP8OC76-2-7-1PIP7701	Mn nodule	0	27.5	8.30	1.26	1.08	0.22					1500	3.4 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-22-28	15.1067	-126.0467	-4641	RP8OC76-22-28-1PIP7701	Mn nodule	0	26.9	6.80	1.34	1.06	0.24					1500	8 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-22-28	15.1067	-126.0467	-4641	RP8OC76-22-28-1PIP7702	Mn nodule	0	27.9	5.55	1.18	0.99	0.21					1500	9 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-4-9	15.2433	-126.0267	-4490	RP8OC76-4-9-1PIP7701	Mn nodule	0	16.2	9.10	0.82	0.53	0.21					690	3.5 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-5-10	15.2167	-125.9317	-4465	RP8OC76-5-10-1PIP7701	Mn nodule	0	26.7	9.50	1.08	0.99	0.27					1400	3.3 cm	Discoidal	Smooth	Nodule cross-section
+RP8OC76-7-12	15.2050	-125.8683	-4601	RP8OC76-7-12-1PIP7701	Mn nodule	0	25.5	10.10	1.12	0.86	0.31					1100	3.5 cm	Discoidal	Rough	Nodule cross-section
+RP8OC76-8-13	15.2067	-125.9533	-4367	RP8OC76-8-13-1PIP7701	Mn nodule	0	25.9	11.30	1.14	0.81	0.30					1300	4.1 cm	Discoidal	Smooth	Nodule cross-section
+RP8OC76-8-13	15.2067	-125.9533	-4367	RP8OC76-8-13-1PIP7702	Mn nodule	0	18.9	12.60	0.71	0.41	0.30					740		Discoidal	Smooth	Nodule topside
+RP8OC76-8-13	15.2067	-125.9533	-4367	RP8OC76-8-13-1PIP7703	Mn nodule	0	25.9	8.80	1.34	0.83	0.36					1400		Discoidal	Smooth	Nodule underside
+RP8OC76-9-14	15.1883	-126.0250	-4444	RP8OC76-9-14-1PIP7701	Mn nodule	0	24.2	8.20	1.35	1.15	0.24					1600	4.3 cm	Discoidal	Rough	Nodule cross-section

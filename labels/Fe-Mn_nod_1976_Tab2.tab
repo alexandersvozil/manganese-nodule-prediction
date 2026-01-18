@@ -1,0 +1,92 @@
+Event	Latitude	Longitude	Elevation [m]	Perc [%]	Abund	Sediment
+AK4-230-GR	-12.3633	-83.4000	-4830	4.4		hemipelagic siliceous-clayey diatomaceous-radiolarian ooze
+AK4-231-GR	-12.4167	-85.2617	-4600	0.5		hemipelagic siliceous-clayey diatomaceous-radiolarian ooze
+AK4-232-GR	-12.4833	-87.9300	-4200	4.5		marly clay
+AK4-233-GR	-17.3667	-86.7833	-4580	0.3		miopelagic clay
+AK4-259-GR	-22.9400	-79.3583	-3560	20.0		miopelagic clay
+AK4-259-GR	-22.9400	-79.3583	-3560	100.0	8.4	miopelagic clay
+AK4-260-GR	-26.9117	-78.9667	-3850	12.1		miopelagic clay
+AK4-261-GR	-30.3833	-78.9883	-4040	0.3		marly clay
+DM8-518-GR	14.4783	-119.3183	-4208	38.0	16.4	siliceous-clayey diatomaceous-radiolarian ooze
+DM8-541-GR	-10.7817	-80.1933	-4780	34.0	13.6	hemipelagic silty clayey mud
+DM8-554-GR	-8.1417	-92.8850	-3980	38.0	9	hemipelagic silty clayey mud
+DM8-556-GR	-7.8117	-99.9517	-4251	46.0	19	metalliferous siliceous-calcareous silty-clayey mud
+DM8-568-GR	-12.2533	-104.2283	-4153	28.0	9.4	metalliferous calcareous pelitic mud
+DM8-569-GR	-13.0617	-102.6400	-4400	10.0	4	metalliferous pelagic clay
+DM8-598-GR	-14.8383	-101.6883	-4072	8.0	1.6	metalliferous calcareous pelitic mud
+DM8-599-GR	-12.5433	-101.6833	-4472		3.6	metalliferous pelagic clay
+DM8-600-GR	-10.7917	-101.8283	-4309	36.0	10	metalliferous marly clay
+DM8-607-GR	13.8400	-145.4183	-5147	15.0	1.74	siliceous-clayey diatomaceous-radiolarian ooze
+DM8-608-GR	15.5800	-149.4400	-5270		0.18	siliceous-clayey diatomaceous-radiolarian ooze
+VITYAZ3899-GR-1	17.0033	141.7200	-4620		2.5	miopelagic clay
+VITYAZ3900-GR-1	15.0650	141.8050	-4549		0.18	miopelagic clay
+VITYAZ4245-GR	25.0000	-137.3167	-4645	20.0	1.8	eupelagic clay
+VITYAZ4273-GR-1	19.9833	-113.9500	-3820	6.2	1.1	miopelagic clay
+VITYAZ4285-GR-1	19.9500	-126.1000	-4576	25.0	2.3	eupelagic clay
+VITYAZ4289-GR-1	20.0000	-130.0167	-5005	6.7	1.1	eupelagic clay
+VITYAZ4343-GR-1	24.0000	179.9667	-5815	22.2	4	eupelagic clay
+VITYAZ4347-GR-1	23.9983	175.6650	-5256	50.0	6	eupelagic clay
+VITYAZ4351-GR	23.9550	170.9667	-5817	10.4	1.7	eupelagic clay
+VITYAZ4355-GR	24.0333	167.4000	-6052	16.0	6	eupelagic clay
+VITYAZ4359-GR-1	24.0167	163.0333	-5542	36.0	10	eupelagic clay
+VITYAZ5066-GR	16.0667	-143.1000	-5250		0.63	eupelagic clay
+VITYAZ5100-GR-1	-7.1333	-140.2217	-4076		2.4	calcareous foraminiferal silty ooze
+VITYAZ5110-GR-1	-12.9833	-154.1100	-5222		7.6	zeolitic clay
+VITYAZ5112-GR	-6.9817	-154.0750	-5040		5.2	eupelagic clay
+VITYAZ5126-GR-1	11.2850	-154.1250	-5142	70.0	4.8	miopelagic clay
+VITYAZ5129-GR-1	11.2583	-176.2800	-5650		11.6	eupelagic clay
+VITYAZ5163-GR-1	13.4467	159.9583	-5638		6.4	eupelagic clay
+VITYAZ5398-GR-1	-18.5967	-161.5267	-4998	75.0	26.4	eupelagic clay
+VITYAZ5408-GR-1	-24.0000	-159.9233	-4947	90.0	35.6	zeolitic clay
+VITYAZ5409-GR-1	-26.0200	-159.8333	-5134	13.0	3.2	eupelagic clay
+VITYAZ5410-GR-1	-27.9833	-158.7500	-5163	10.0	2.1	eupelagic clay
+VITYAZ5411-GR-1	-25.9633	-156.8383	-5130	40.0	15.7	zeolitic clay
+VITYAZ5414-GR-1	-20.4917	-152.2333	-4375	62.0	28.4	marly clay
+VITYAZ5420-GR-1	-15.8217	-160.1700	-5102	42.0	12.8	eupelagic clay
+VITYAZ5421-GR-1	-14.0650	-160.3667	-5102	62.0	26.8	eupelagic clay
+VITYAZ5422-GR-1	-12.0850	-160.4400	-5618	30.0	9.3	zeolitic clay
+VITYAZ5423-GR-1	-10.0100	-160.0217	-4833	36.0	12	calcareous foraminiferal pelitic ooze
+VITYAZ5424-GR	-8.0800	-160.5500	-4240	1.0	0.3	calcareous foraminiferal silty ooze
+VITYAZ5429-GR-1	-0.0033	-159.8783	-5163	2.0	0.45	siliceous-calcareous diatomaceous-radiolarian-foraminiferal ooze
+VITYAZ5432-GR-1	12.0483	-159.1467	-5360	34.0	9.1	miopelagic clay
+VITYAZ5437-GR	26.1250	-157.7800	-3862	16.0	4.5	calcareous foraminiferal silty ooze
+VITYAZ5505-GR	19.9833	139.8783	-4659		2	miopelagic clay
+VITYAZ5937A-GR	0.3217	-179.7500	-5020	26.4	4.2	marly diatomaceous-radiolarian ooze
+VITYAZ5937-GR	0.3337	-179.8667	-5480	61.0	56.4	marly diatomaceous-radiolarian ooze
+VITYAZ5958-GR	-25.1800	-166.6950	-5725	21.3	5	eupelagic clay
+VITYAZ5959-GR	-26.2783	-164.8417	-5325	16.5	3.2	eupelagic clay
+VITYAZ5960-GR	-26.6700	-163.6467	-5200	21.8	4.2	eupelagic clay
+VITYAZ5964-GR	-23.2183	-161.4167	-4875	100.0	30	marly clay
+VITYAZ5966-GR	-20.0850	-163.0800	-5040	30.0	15.6	eupelagic clay
+VITYAZ5970-GR	-21.8200	-157.5317	-4870		10.4	eupelagic clay
+VITYAZ5971-GR	-22.7208	-157.1350	-4900	70.0	32.6	marly clay
+VITYAZ5982-GR	-14.3333	-153.1550	-4910	54.0	22.8	eupelagic clay
+VITYAZ5983-GR	-12.1550	-155.1550	-5070	5.0	0.72	zeolitic clay
+VITYAZ5984-GR	-11.0967	-155.9833	-5330		3.2	zeolitic clay
+VITYAZ5987-GR	-11.0000	-156.3400	-5200		2.4	zeolitic clay
+VITYAZ5993-GR	7.8850	-153.5500	-5210		1.8	miopelagic clay
+VITYAZ5995-GR	11.1100	-153.5217	-5030		1.8	siliceous-clayey diatomaceous-radiolarian ooze
+VITYAZ6005-GR	22.4100	174.6550	-5190	1.6	0.23	eupelagic clay
+VITYAZ6006-GR	22.7583	173.7400	-5420	17.2	2.8	eupelagic clay
+VITYAZ6009-GR	24.3333	170.3133	-5440	28.0	6.4	eupelagic clay
+VITYAZ6012-GR	25.6267	167.8967	-6160	4.0	0.8	eupelagic clay
+VITYAZ6013-GR	25.9517	167.4317	-5520	60.0	17.6	eupelagic clay
+VITYAZ6014-GR	26.6567	166.1417	-5890	10.0	3	eupelagic clay
+VITYAZ6015-GR	26.8583	165.5350	-5840	10.0	2.8	eupelagic clay
+VITYAZ6016-GR	27.1300	164.5117	-4400	80.0	15	marly clay
+VITYAZ6165-GR-1	37.5000	146.5667	-5610		2	hemipelagic clayey mud
+VITYAZ6167-GR	35.1650	150.0867	-5990		0.12	hemipelagic clayey mud
+VITYAZ6168-GR	36.2000	149.8000	-6030		0.06	hemipelagic clayey mud
+VITYAZ6172-GR	30.0167	155.2833	-5795		0.24	miopelagic clay
+VITYAZ6174-GR	26.4733	160.6250	-5915		1.6	eupelagic clay
+VITYAZ6177-GR	16.9800	164.9367	-5400		18	eupelagic clay
+VITYAZ6243-GR	24.9333	-139.8500	-4368	5.2	0.5	eupelagic clay
+VITYAZ6255-GR	33.5750	168.3333	-5610	16.0	2.4	miopelagic clay
+VITYAZ6256-GR	32.1700	173.4767	-4180		12.4	marly clay
+VITYAZ6257-GR	32.1700	173.3633	-2800	64.0	3	calcareous foraminiferal sandy-silty ooze
+VITYAZ6267-GR	20.2667	-179.9833	-4670	10.0	2.2	eupelagic clay
+VITYAZ6272-GR	13.2633	179.6467	-5320	31.0	4.4	eupelagic clay
+VITYAZ6273-GR	12.4833	179.5033	-5420	10.0		eupelagic clay
+VITYAZ6332-GR	-13.0333	-160.5083	-5060	100.0	62	eupelagic clay
+VITYAZ6334-GR	-11.1033	-159.0000	-5269	35.0	13.2	eupelagic clay
+VITYAZ6824-GR	15.7083	132.9850	-5360		2.2	eupelagic clay

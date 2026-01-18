@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a86329aa162517b5d29e50d9498d10e4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 50px; left: 50px; z-index: 1000;
+                background-color: white; padding: 10px; border: 2px solid gray;
+                border-radius: 5px; font-family: Arial;">
+        <b>Nodule Concentration (kg/m²)</b><br>
+        <i style="background: green; width: 12px; height: 12px;
+           display: inline-block; border-radius: 50%;"></i> Low (0-8)<br>
+        <i style="background: orange; width: 12px; height: 12px;
+           display: inline-block; border-radius: 50%;"></i> Medium (8-16)<br>
+        <i style="background: red; width: 12px; height: 12px;
+           display: inline-block; border-radius: 50%;"></i> High (16-26)
+    </div>
+    
+    
+            <div class="folium-map" id="map_a86329aa162517b5d29e50d9498d10e4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a86329aa162517b5d29e50d9498d10e4 = L.map(
+                "map_a86329aa162517b5d29e50d9498d10e4",
+                {
+                    center: [12.294356741573031, -137.31732359550563],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c6d60174db23fd26f2df011c5390c05b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c6d60174db23fd26f2df011c5390c05b.addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+            var circle_marker_63daafb595fc4ed24922b91aa073d2cc = L.circleMarker(
+                [12.18315, -137.68315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_017b2998b16d8e1102e38a37f7fbac74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b94977c1ee8f62d6798ec8654f8133b4 = $(`<div id="html_b94977c1ee8f62d6798ec8654f8133b4" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-54-48<br><b>Concentration:</b> 6.80 kg/m²<br><b>Depth:</b> 4833 m<br><b>Location:</b> 12.183°N, -137.683°W</div>`)[0];
+                popup_017b2998b16d8e1102e38a37f7fbac74.setContent(html_b94977c1ee8f62d6798ec8654f8133b4);
+            
+        
+
+        circle_marker_63daafb595fc4ed24922b91aa073d2cc.bindPopup(popup_017b2998b16d8e1102e38a37f7fbac74)
+        ;
+
+        
+    
+    
+            var circle_marker_20c5791ee89da1a984a06d9aff4a66f1 = L.circleMarker(
+                [14.257, -126.023],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_66902c30a0ca63f81d360b91cc591462 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75bfe7d063724f92a17eee2bf9bef1d0 = $(`<div id="html_75bfe7d063724f92a17eee2bf9bef1d0" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-24B-29<br><b>Concentration:</b> 21.30 kg/m²<br><b>Depth:</b> 4468 m<br><b>Location:</b> 14.257°N, -126.023°W</div>`)[0];
+                popup_66902c30a0ca63f81d360b91cc591462.setContent(html_75bfe7d063724f92a17eee2bf9bef1d0);
+            
+        
+
+        circle_marker_20c5791ee89da1a984a06d9aff4a66f1.bindPopup(popup_66902c30a0ca63f81d360b91cc591462)
+        ;
+
+        
+    
+    
+            var circle_marker_8179852702f109821da96a3157ad69f1 = L.circleMarker(
+                [9.3167, -150.875],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_3506e6bb574e6e67b7bafde9289c9c07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6c36d449a8e5e94285855d92114ca43 = $(`<div id="html_d6c36d449a8e5e94285855d92114ca43" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-03<br><b>Concentration:</b> 10.20 kg/m²<br><b>Depth:</b> 4900 m<br><b>Location:</b> 9.317°N, -150.875°W</div>`)[0];
+                popup_3506e6bb574e6e67b7bafde9289c9c07.setContent(html_d6c36d449a8e5e94285855d92114ca43);
+            
+        
+
+        circle_marker_8179852702f109821da96a3157ad69f1.bindPopup(popup_3506e6bb574e6e67b7bafde9289c9c07)
+        ;
+
+        
+    
+    
+            var circle_marker_05afdd96776cf5ad4c364a61f6c46e64 = L.circleMarker(
+                [15.76, -126.008],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_3e3a1b9ec50f559964eb917c55fe1a63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3943b799ec142e96a16f4f0a8ff02640 = $(`<div id="html_3943b799ec142e96a16f4f0a8ff02640" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-15B-50<br><b>Concentration:</b> 8.40 kg/m²<br><b>Depth:</b> 4552 m<br><b>Location:</b> 15.760°N, -126.008°W</div>`)[0];
+                popup_3e3a1b9ec50f559964eb917c55fe1a63.setContent(html_3943b799ec142e96a16f4f0a8ff02640);
+            
+        
+
+        circle_marker_05afdd96776cf5ad4c364a61f6c46e64.bindPopup(popup_3e3a1b9ec50f559964eb917c55fe1a63)
+        ;
+
+        
+    
+    
+            var circle_marker_6eff01ecdf1f0966bfc11de3fdc5120a = L.circleMarker(
+                [15.988, -126.193],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_97474c2e2aab7a6e94326660896c5f9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6df520e262038b4da721933906643a36 = $(`<div id="html_6df520e262038b4da721933906643a36" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-20-27<br><b>Concentration:</b> 7.40 kg/m²<br><b>Depth:</b> 4702 m<br><b>Location:</b> 15.988°N, -126.193°W</div>`)[0];
+                popup_97474c2e2aab7a6e94326660896c5f9b.setContent(html_6df520e262038b4da721933906643a36);
+            
+        
+
+        circle_marker_6eff01ecdf1f0966bfc11de3fdc5120a.bindPopup(popup_97474c2e2aab7a6e94326660896c5f9b)
+        ;
+
+        
+    
+    
+            var circle_marker_50a13697cf540af4ad1f6ecc55aa1753 = L.circleMarker(
+                [9.08, -151.15685000000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_9e15b520b33f80b56b2be93e400ccbff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e81527f1e03a5b00571f10d23169099 = $(`<div id="html_1e81527f1e03a5b00571f10d23169099" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-18<br><b>Concentration:</b> 2.20 kg/m²<br><b>Depth:</b> 5025 m<br><b>Location:</b> 9.080°N, -151.157°W</div>`)[0];
+                popup_9e15b520b33f80b56b2be93e400ccbff.setContent(html_1e81527f1e03a5b00571f10d23169099);
+            
+        
+
+        circle_marker_50a13697cf540af4ad1f6ecc55aa1753.bindPopup(popup_9e15b520b33f80b56b2be93e400ccbff)
+        ;
+
+        
+    
+    
+            var circle_marker_51d1dcfac96f56ca019d08573c127b50 = L.circleMarker(
+                [15.105, -125.95685],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_7613cea43e3b0e4ac6e39339d68fa122 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83274c23a3774d6dcc01bb3b371b1ca7 = $(`<div id="html_83274c23a3774d6dcc01bb3b371b1ca7" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-18-24<br><b>Concentration:</b> 10.89 kg/m²<br><b>Depth:</b> 4426 m<br><b>Location:</b> 15.105°N, -125.957°W</div>`)[0];
+                popup_7613cea43e3b0e4ac6e39339d68fa122.setContent(html_83274c23a3774d6dcc01bb3b371b1ca7);
+            
+        
+
+        circle_marker_51d1dcfac96f56ca019d08573c127b50.bindPopup(popup_7613cea43e3b0e4ac6e39339d68fa122)
+        ;
+
+        
+    
+    
+            var circle_marker_c04f378c3cfa8b2b5af865357927cf59 = L.circleMarker(
+                [11.84685, -137.445],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_b04c34e4b05b9b9326700b45355ed179 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afed5839840a17996c72a582915f42f6 = $(`<div id="html_afed5839840a17996c72a582915f42f6" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-55-54<br><b>Concentration:</b> 7.25 kg/m²<br><b>Depth:</b> 4737 m<br><b>Location:</b> 11.847°N, -137.445°W</div>`)[0];
+                popup_b04c34e4b05b9b9326700b45355ed179.setContent(html_afed5839840a17996c72a582915f42f6);
+            
+        
+
+        circle_marker_c04f378c3cfa8b2b5af865357927cf59.bindPopup(popup_b04c34e4b05b9b9326700b45355ed179)
+        ;
+
+        
+    
+    
+            var circle_marker_0a1761e06b67bbb00c5404419eb3e8ce = L.circleMarker(
+                [9.4, -150.83185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_baf824b391879a01431a29fbcac47053 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74cadba2c6680648448ad71643605b97 = $(`<div id="html_74cadba2c6680648448ad71643605b97" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-06<br><b>Concentration:</b> 4.75 kg/m²<br><b>Depth:</b> 5121 m<br><b>Location:</b> 9.400°N, -150.832°W</div>`)[0];
+                popup_baf824b391879a01431a29fbcac47053.setContent(html_74cadba2c6680648448ad71643605b97);
+            
+        
+
+        circle_marker_0a1761e06b67bbb00c5404419eb3e8ce.bindPopup(popup_baf824b391879a01431a29fbcac47053)
+        ;
+
+        
+    
+    
+            var circle_marker_5ffbb44a06868ab7d6e9e2a98ef9f957 = L.circleMarker(
+                [11.22815, -139.165],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_cdfaa4ea3462fa733bb0f5f56e47ead4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5abc2235c67f087eef887494bf033246 = $(`<div id="html_5abc2235c67f087eef887494bf033246" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-52-37<br><b>Concentration:</b> 0.12 kg/m²<br><b>Depth:</b> 4778 m<br><b>Location:</b> 11.228°N, -139.165°W</div>`)[0];
+                popup_cdfaa4ea3462fa733bb0f5f56e47ead4.setContent(html_5abc2235c67f087eef887494bf033246);
+            
+        
+
+        circle_marker_5ffbb44a06868ab7d6e9e2a98ef9f957.bindPopup(popup_cdfaa4ea3462fa733bb0f5f56e47ead4)
+        ;
+
+        
+    
+    
+            var circle_marker_2781451e8bf47a1b63fd507c93756018 = L.circleMarker(
+                [16.012, -126.772],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_22ab3d7dcc9664cae7f7c799d172d2a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71ebaf97014b75100087a42d9f782198 = $(`<div id="html_71ebaf97014b75100087a42d9f782198" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-11-53<br><b>Concentration:</b> 5.30 kg/m²<br><b>Depth:</b> 4603 m<br><b>Location:</b> 16.012°N, -126.772°W</div>`)[0];
+                popup_22ab3d7dcc9664cae7f7c799d172d2a8.setContent(html_71ebaf97014b75100087a42d9f782198);
+            
+        
+
+        circle_marker_2781451e8bf47a1b63fd507c93756018.bindPopup(popup_22ab3d7dcc9664cae7f7c799d172d2a8)
+        ;
+
+        
+    
+    
+            var circle_marker_5f785664b38cfaee8833216e4971a96f = L.circleMarker(
+                [15.13815, -125.955],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_43e82400f379c0d043845a8bf4f07c5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_055f2331bb12959e081dbbf721b5f760 = $(`<div id="html_055f2331bb12959e081dbbf721b5f760" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-17-23<br><b>Concentration:</b> 11.67 kg/m²<br><b>Depth:</b> 4376 m<br><b>Location:</b> 15.138°N, -125.955°W</div>`)[0];
+                popup_43e82400f379c0d043845a8bf4f07c5f.setContent(html_055f2331bb12959e081dbbf721b5f760);
+            
+        
+
+        circle_marker_5f785664b38cfaee8833216e4971a96f.bindPopup(popup_43e82400f379c0d043845a8bf4f07c5f)
+        ;
+
+        
+    
+    
+            var circle_marker_3d67ef60db49e95145e0433ae5b933f2 = L.circleMarker(
+                [9.08, -151.185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_3ffbe896b3044aecca2fdc160df418a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3ac60690a9425834fc06a68d710afde = $(`<div id="html_f3ac60690a9425834fc06a68d710afde" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-15<br><b>Concentration:</b> 4.70 kg/m²<br><b>Depth:</b> 5012 m<br><b>Location:</b> 9.080°N, -151.185°W</div>`)[0];
+                popup_3ffbe896b3044aecca2fdc160df418a3.setContent(html_f3ac60690a9425834fc06a68d710afde);
+            
+        
+
+        circle_marker_3d67ef60db49e95145e0433ae5b933f2.bindPopup(popup_3ffbe896b3044aecca2fdc160df418a3)
+        ;
+
+        
+    
+    
+            var circle_marker_0c77850f97fbb3b54e9eb5cad38f80bc = L.circleMarker(
+                [9.33315, -150.80685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_732df15ba2bb0ab90d3ef7071086b409 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5634394093f35a067eb8f319d119f4f5 = $(`<div id="html_5634394093f35a067eb8f319d119f4f5" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-09<br><b>Concentration:</b> 5.80 kg/m²<br><b>Depth:</b> 4745 m<br><b>Location:</b> 9.333°N, -150.807°W</div>`)[0];
+                popup_732df15ba2bb0ab90d3ef7071086b409.setContent(html_5634394093f35a067eb8f319d119f4f5);
+            
+        
+
+        circle_marker_0c77850f97fbb3b54e9eb5cad38f80bc.bindPopup(popup_732df15ba2bb0ab90d3ef7071086b409)
+        ;
+
+        
+    
+    
+            var circle_marker_4fc08453614845a8f894e0e0d9865ae5 = L.circleMarker(
+                [11.70685, -139.18],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_ac5592cd03393181560f1a1ac1f7ac89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a753d8c8c03dcf77b612836761402d36 = $(`<div id="html_a753d8c8c03dcf77b612836761402d36" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-51-34<br><b>Concentration:</b> 6.75 kg/m²<br><b>Depth:</b> 4828 m<br><b>Location:</b> 11.707°N, -139.180°W</div>`)[0];
+                popup_ac5592cd03393181560f1a1ac1f7ac89.setContent(html_a753d8c8c03dcf77b612836761402d36);
+            
+        
+
+        circle_marker_4fc08453614845a8f894e0e0d9865ae5.bindPopup(popup_ac5592cd03393181560f1a1ac1f7ac89)
+        ;
+
+        
+    
+    
+            var circle_marker_27b8da8cad93554a8a61e701b5cd928e = L.circleMarker(
+                [15.273, -126.16],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_90318415d8417f951aae6559fab6033b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d76a86f902d3deda79bc7d9dfe645c8b = $(`<div id="html_d76a86f902d3deda79bc7d9dfe645c8b" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-9-21<br><b>Concentration:</b> 8.60 kg/m²<br><b>Depth:</b> 4630 m<br><b>Location:</b> 15.273°N, -126.160°W</div>`)[0];
+                popup_90318415d8417f951aae6559fab6033b.setContent(html_d76a86f902d3deda79bc7d9dfe645c8b);
+            
+        
+
+        circle_marker_27b8da8cad93554a8a61e701b5cd928e.bindPopup(popup_90318415d8417f951aae6559fab6033b)
+        ;
+
+        
+    
+    
+            var circle_marker_d3e79536e17c13fe71a415bb77e98b20 = L.circleMarker(
+                [9.345, -150.845],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_e6a9ca0e6a715706d70a8cd196983bab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16f894a643cc2f1a9bd7e30208aa591b = $(`<div id="html_16f894a643cc2f1a9bd7e30208aa591b" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-01<br><b>Concentration:</b> 3.25 kg/m²<br><b>Depth:</b> 5057 m<br><b>Location:</b> 9.345°N, -150.845°W</div>`)[0];
+                popup_e6a9ca0e6a715706d70a8cd196983bab.setContent(html_16f894a643cc2f1a9bd7e30208aa591b);
+            
+        
+
+        circle_marker_d3e79536e17c13fe71a415bb77e98b20.bindPopup(popup_e6a9ca0e6a715706d70a8cd196983bab)
+        ;
+
+        
+    
+    
+            var circle_marker_6f917e05db428e74c497c2118dcd8b05 = L.circleMarker(
+                [9.31815, -150.84],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_12046e85177895804fbd55840dbc4944 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ddd73aafc96416d1cea777c3c21c685 = $(`<div id="html_0ddd73aafc96416d1cea777c3c21c685" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-08<br><b>Concentration:</b> 8.35 kg/m²<br><b>Depth:</b> 5108 m<br><b>Location:</b> 9.318°N, -150.840°W</div>`)[0];
+                popup_12046e85177895804fbd55840dbc4944.setContent(html_0ddd73aafc96416d1cea777c3c21c685);
+            
+        
+
+        circle_marker_6f917e05db428e74c497c2118dcd8b05.bindPopup(popup_12046e85177895804fbd55840dbc4944)
+        ;
+
+        
+    
+    
+            var circle_marker_a998fa5ae2ad847231f8e75b7ebb05c3 = L.circleMarker(
+                [15.23185, -125.97315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_6b5cfe90165bdee2e2484564a9bb14a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93239bc7b3fb93944f92028e9124fe20 = $(`<div id="html_93239bc7b3fb93944f92028e9124fe20" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-1-6<br><b>Concentration:</b> 5.00 kg/m²<br><b>Depth:</b> 4380 m<br><b>Location:</b> 15.232°N, -125.973°W</div>`)[0];
+                popup_6b5cfe90165bdee2e2484564a9bb14a9.setContent(html_93239bc7b3fb93944f92028e9124fe20);
+            
+        
+
+        circle_marker_a998fa5ae2ad847231f8e75b7ebb05c3.bindPopup(popup_6b5cfe90165bdee2e2484564a9bb14a9)
+        ;
+
+        
+    
+    
+            var circle_marker_0386cecc82dad8fd6a36d40ac36b5b9a = L.circleMarker(
+                [11.71815, -139.14815],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_084f5a19c0db818ffadf47176927b39f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f25b4430c57a83f727261ddb80ec04d = $(`<div id="html_3f25b4430c57a83f727261ddb80ec04d" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-51-35<br><b>Concentration:</b> 0.03 kg/m²<br><b>Depth:</b> 4817 m<br><b>Location:</b> 11.718°N, -139.148°W</div>`)[0];
+                popup_084f5a19c0db818ffadf47176927b39f.setContent(html_3f25b4430c57a83f727261ddb80ec04d);
+            
+        
+
+        circle_marker_0386cecc82dad8fd6a36d40ac36b5b9a.bindPopup(popup_084f5a19c0db818ffadf47176927b39f)
+        ;
+
+        
+    
+    
+            var circle_marker_9f3d10cc23011a176bed55f4bb803636 = L.circleMarker(
+                [11.81, -137.405],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_98873fb641a6a13686a123eb0f734ada = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dfeb86ea757ebed770c7905a9dc1dfd1 = $(`<div id="html_dfeb86ea757ebed770c7905a9dc1dfd1" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-55-56<br><b>Concentration:</b> 16.70 kg/m²<br><b>Depth:</b> 4800 m<br><b>Location:</b> 11.810°N, -137.405°W</div>`)[0];
+                popup_98873fb641a6a13686a123eb0f734ada.setContent(html_dfeb86ea757ebed770c7905a9dc1dfd1);
+            
+        
+
+        circle_marker_9f3d10cc23011a176bed55f4bb803636.bindPopup(popup_98873fb641a6a13686a123eb0f734ada)
+        ;
+
+        
+    
+    
+            var circle_marker_a22c47ab7fc017299a50b9282e127ace = L.circleMarker(
+                [15.13185, -125.99],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_5b276b5691f7bf8f8b31353cb45f445a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb39796eabdf14f1f235ddad2ad5b958 = $(`<div id="html_bb39796eabdf14f1f235ddad2ad5b958" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-16-22<br><b>Concentration:</b> 11.02 kg/m²<br><b>Depth:</b> 4442 m<br><b>Location:</b> 15.132°N, -125.990°W</div>`)[0];
+                popup_5b276b5691f7bf8f8b31353cb45f445a.setContent(html_bb39796eabdf14f1f235ddad2ad5b958);
+            
+        
+
+        circle_marker_a22c47ab7fc017299a50b9282e127ace.bindPopup(popup_5b276b5691f7bf8f8b31353cb45f445a)
+        ;
+
+        
+    
+    
+            var circle_marker_356a578cd1fea0910b8c8b2e2989ee59 = L.circleMarker(
+                [9.05815, -151.185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_55f1d68d55da63972941fea9caf844a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38fe4259d3b0dd0b5442e343e0c28a07 = $(`<div id="html_38fe4259d3b0dd0b5442e343e0c28a07" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-12<br><b>Concentration:</b> 5.90 kg/m²<br><b>Depth:</b> 4907 m<br><b>Location:</b> 9.058°N, -151.185°W</div>`)[0];
+                popup_55f1d68d55da63972941fea9caf844a6.setContent(html_38fe4259d3b0dd0b5442e343e0c28a07);
+            
+        
+
+        circle_marker_356a578cd1fea0910b8c8b2e2989ee59.bindPopup(popup_55f1d68d55da63972941fea9caf844a6)
+        ;
+
+        
+    
+    
+            var circle_marker_4878a184f9276f029b94b99edb5075ae = L.circleMarker(
+                [15.265, -126.64],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d234582c377a13268c2e94f8b6bd5bf1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23fbc85528afbd0e17b92f655aac40f8 = $(`<div id="html_23fbc85528afbd0e17b92f655aac40f8" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-3-5<br><b>Concentration:</b> 10.00 kg/m²<br><b>Depth:</b> 4675 m<br><b>Location:</b> 15.265°N, -126.640°W</div>`)[0];
+                popup_d234582c377a13268c2e94f8b6bd5bf1.setContent(html_23fbc85528afbd0e17b92f655aac40f8);
+            
+        
+
+        circle_marker_4878a184f9276f029b94b99edb5075ae.bindPopup(popup_d234582c377a13268c2e94f8b6bd5bf1)
+        ;
+
+        
+    
+    
+            var circle_marker_37706906eeceb31e9cb86a0111853780 = L.circleMarker(
+                [9.06685, -151.23685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_ba3c321d17e39db36082cf522860caeb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4afb5e3a7be8cc2be775f0f162c84000 = $(`<div id="html_4afb5e3a7be8cc2be775f0f162c84000" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-14<br><b>Concentration:</b> 2.55 kg/m²<br><b>Depth:</b> 5007 m<br><b>Location:</b> 9.067°N, -151.237°W</div>`)[0];
+                popup_ba3c321d17e39db36082cf522860caeb.setContent(html_4afb5e3a7be8cc2be775f0f162c84000);
+            
+        
+
+        circle_marker_37706906eeceb31e9cb86a0111853780.bindPopup(popup_ba3c321d17e39db36082cf522860caeb)
+        ;
+
+        
+    
+    
+            var circle_marker_d3356d25f428d111ef5dca7cb2b0dadf = L.circleMarker(
+                [8.45685, -150.83685],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_2fa3138a25389b6baf83c95767c75b3c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea7b4ea2618a8e18690dbce44d5980db = $(`<div id="html_ea7b4ea2618a8e18690dbce44d5980db" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-49-26<br><b>Concentration:</b> 11.25 kg/m²<br><b>Depth:</b> 4872 m<br><b>Location:</b> 8.457°N, -150.837°W</div>`)[0];
+                popup_2fa3138a25389b6baf83c95767c75b3c.setContent(html_ea7b4ea2618a8e18690dbce44d5980db);
+            
+        
+
+        circle_marker_d3356d25f428d111ef5dca7cb2b0dadf.bindPopup(popup_2fa3138a25389b6baf83c95767c75b3c)
+        ;
+
+        
+    
+    
+            var circle_marker_80c6fdf33b49f0dab16ac65554e56138 = L.circleMarker(
+                [15.24185, -126.04315],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_311a219460ac530303cf44267500e014 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7517c8ebb9d5e46a18919c040fefe129 = $(`<div id="html_7517c8ebb9d5e46a18919c040fefe129" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-2-7<br><b>Concentration:</b> 11.37 kg/m²<br><b>Depth:</b> 4539 m<br><b>Location:</b> 15.242°N, -126.043°W</div>`)[0];
+                popup_311a219460ac530303cf44267500e014.setContent(html_7517c8ebb9d5e46a18919c040fefe129);
+            
+        
+
+        circle_marker_80c6fdf33b49f0dab16ac65554e56138.bindPopup(popup_311a219460ac530303cf44267500e014)
+        ;
+
+        
+    
+    
+            var circle_marker_0855726e141d90873655760bbeb69120 = L.circleMarker(
+                [9.03815, -151.19],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_9a2f503dcaf27fb21c671ca0152cfd18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db2f11b1ba9ac55d6af37280079fea18 = $(`<div id="html_db2f11b1ba9ac55d6af37280079fea18" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-16<br><b>Concentration:</b> 3.95 kg/m²<br><b>Depth:</b> 4948 m<br><b>Location:</b> 9.038°N, -151.190°W</div>`)[0];
+                popup_9a2f503dcaf27fb21c671ca0152cfd18.setContent(html_db2f11b1ba9ac55d6af37280079fea18);
+            
+        
+
+        circle_marker_0855726e141d90873655760bbeb69120.bindPopup(popup_9a2f503dcaf27fb21c671ca0152cfd18)
+        ;
+
+        
+    
+    
+            var circle_marker_44802ae37dea958fb813534d2f480320 = L.circleMarker(
+                [8.293, -151.22],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_67b90776dadbabdf75fd49aadb9cdd15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ab655b8c01948a38d546cfefa4cbba9 = $(`<div id="html_6ab655b8c01948a38d546cfefa4cbba9" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-48-21<br><b>Concentration:</b> 0.70 kg/m²<br><b>Depth:</b> 5097 m<br><b>Location:</b> 8.293°N, -151.220°W</div>`)[0];
+                popup_67b90776dadbabdf75fd49aadb9cdd15.setContent(html_6ab655b8c01948a38d546cfefa4cbba9);
+            
+        
+
+        circle_marker_44802ae37dea958fb813534d2f480320.bindPopup(popup_67b90776dadbabdf75fd49aadb9cdd15)
+        ;
+
+        
+    
+    
+            var circle_marker_c80ac2a317f1bb43722432259e0b94b3 = L.circleMarker(
+                [12.2, -137.745],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_39b6b0cf6ce1a812f37b0c6d54de4e9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3cbb9204097dd8b7596fbc9879722a35 = $(`<div id="html_3cbb9204097dd8b7596fbc9879722a35" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-54-49<br><b>Concentration:</b> 0.20 kg/m²<br><b>Depth:</b> 4942 m<br><b>Location:</b> 12.200°N, -137.745°W</div>`)[0];
+                popup_39b6b0cf6ce1a812f37b0c6d54de4e9b.setContent(html_3cbb9204097dd8b7596fbc9879722a35);
+            
+        
+
+        circle_marker_c80ac2a317f1bb43722432259e0b94b3.bindPopup(popup_39b6b0cf6ce1a812f37b0c6d54de4e9b)
+        ;
+
+        
+    
+    
+            var circle_marker_3c7cb7842f5ab0fb6706e29166a1bcac = L.circleMarker(
+                [11.27185, -139.07],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_170f5062a6d5418f076b3822aa11cff3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6972a609a11cb0b53d05c35064728ce0 = $(`<div id="html_6972a609a11cb0b53d05c35064728ce0" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-52-40<br><b>Concentration:</b> 1.45 kg/m²<br><b>Depth:</b> 4765 m<br><b>Location:</b> 11.272°N, -139.070°W</div>`)[0];
+                popup_170f5062a6d5418f076b3822aa11cff3.setContent(html_6972a609a11cb0b53d05c35064728ce0);
+            
+        
+
+        circle_marker_3c7cb7842f5ab0fb6706e29166a1bcac.bindPopup(popup_170f5062a6d5418f076b3822aa11cff3)
+        ;
+
+        
+    
+    
+            var circle_marker_91017ce75a7be9cbb026fed0a3cff0a6 = L.circleMarker(
+                [8.26685, -151.18815],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_356353fa518564dd3667b60e057d1c16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ad399e42653ffc7a130092bcf98b260 = $(`<div id="html_9ad399e42653ffc7a130092bcf98b260" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-48-22<br><b>Concentration:</b> 1.10 kg/m²<br><b>Depth:</b> 5014 m<br><b>Location:</b> 8.267°N, -151.188°W</div>`)[0];
+                popup_356353fa518564dd3667b60e057d1c16.setContent(html_9ad399e42653ffc7a130092bcf98b260);
+            
+        
+
+        circle_marker_91017ce75a7be9cbb026fed0a3cff0a6.bindPopup(popup_356353fa518564dd3667b60e057d1c16)
+        ;
+
+        
+    
+    
+            var circle_marker_522e5eac9b1a917fb4a29ba76727e108 = L.circleMarker(
+                [15.21685, -125.93185],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_78555f4aadb4b76037cc34ff0305acad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c2870114895bd58acb5fb57384c6b9e = $(`<div id="html_7c2870114895bd58acb5fb57384c6b9e" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-5-10<br><b>Concentration:</b> 9.96 kg/m²<br><b>Depth:</b> 4465 m<br><b>Location:</b> 15.217°N, -125.932°W</div>`)[0];
+                popup_78555f4aadb4b76037cc34ff0305acad.setContent(html_7c2870114895bd58acb5fb57384c6b9e);
+            
+        
+
+        circle_marker_522e5eac9b1a917fb4a29ba76727e108.bindPopup(popup_78555f4aadb4b76037cc34ff0305acad)
+        ;
+
+        
+    
+    
+            var circle_marker_60190aedd791f3e4d6ad0d79b7260eae = L.circleMarker(
+                [9.32685, -150.845],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d6b1f6bd18ba21bcca872107c544a908 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08198a35990e2ae98c8051bee180891f = $(`<div id="html_08198a35990e2ae98c8051bee180891f" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-07<br><b>Concentration:</b> 3.30 kg/m²<br><b>Depth:</b> 5012 m<br><b>Location:</b> 9.327°N, -150.845°W</div>`)[0];
+                popup_d6b1f6bd18ba21bcca872107c544a908.setContent(html_08198a35990e2ae98c8051bee180891f);
+            
+        
+
+        circle_marker_60190aedd791f3e4d6ad0d79b7260eae.bindPopup(popup_d6b1f6bd18ba21bcca872107c544a908)
+        ;
+
+        
+    
+    
+            var circle_marker_a42ffd3dcf76bc049f53b1349b75b744 = L.circleMarker(
+                [11.72815, -139.13684999999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_2e249c0416d6b22d29e5a15effbba25c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3a49edc85e6121d50c60dae1516a6d8 = $(`<div id="html_f3a49edc85e6121d50c60dae1516a6d8" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-51-36<br><b>Concentration:</b> 0.12 kg/m²<br><b>Depth:</b> 4817 m<br><b>Location:</b> 11.728°N, -139.137°W</div>`)[0];
+                popup_2e249c0416d6b22d29e5a15effbba25c.setContent(html_f3a49edc85e6121d50c60dae1516a6d8);
+            
+        
+
+        circle_marker_a42ffd3dcf76bc049f53b1349b75b744.bindPopup(popup_2e249c0416d6b22d29e5a15effbba25c)
+        ;
+
+        
+    
+    
+            var circle_marker_d8719da4e0797c1437a1ff4fff3f6964 = L.circleMarker(
+                [8.695, -150.31185],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_f0e258c86655fcae6111eef2de40643b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_657550b67ce6c324d850b9a605bf0cbf = $(`<div id="html_657550b67ce6c324d850b9a605bf0cbf" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-50-28<br><b>Concentration:</b> 10.55 kg/m²<br><b>Depth:</b> 4909 m<br><b>Location:</b> 8.695°N, -150.312°W</div>`)[0];
+                popup_f0e258c86655fcae6111eef2de40643b.setContent(html_657550b67ce6c324d850b9a605bf0cbf);
+            
+        
+
+        circle_marker_d8719da4e0797c1437a1ff4fff3f6964.bindPopup(popup_f0e258c86655fcae6111eef2de40643b)
+        ;
+
+        
+    
+    
+            var circle_marker_fdcbe09b3007bd2b9c90e8b57ae4ec27 = L.circleMarker(
+                [15.243, -126.493],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_265671de3331cd109941be38c5a087b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b791a90dc48ebcf123cbd02f53eafcad = $(`<div id="html_b791a90dc48ebcf123cbd02f53eafcad" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-14-39<br><b>Concentration:</b> 6.30 kg/m²<br><b>Depth:</b> 4581 m<br><b>Location:</b> 15.243°N, -126.493°W</div>`)[0];
+                popup_265671de3331cd109941be38c5a087b5.setContent(html_b791a90dc48ebcf123cbd02f53eafcad);
+            
+        
+
+        circle_marker_fdcbe09b3007bd2b9c90e8b57ae4ec27.bindPopup(popup_265671de3331cd109941be38c5a087b5)
+        ;
+
+        
+    
+    
+            var circle_marker_666ed148b7d58244e8b2402d44d79c47 = L.circleMarker(
+                [15.778, -126.187],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_0e1e5f3fa303c4e3f068e175c52274bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a4f96fcc4384dadbbc907fca8aad4d9 = $(`<div id="html_5a4f96fcc4384dadbbc907fca8aad4d9" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-16B-49<br><b>Concentration:</b> 6.40 kg/m²<br><b>Depth:</b> 4692 m<br><b>Location:</b> 15.778°N, -126.187°W</div>`)[0];
+                popup_0e1e5f3fa303c4e3f068e175c52274bd.setContent(html_5a4f96fcc4384dadbbc907fca8aad4d9);
+            
+        
+
+        circle_marker_666ed148b7d58244e8b2402d44d79c47.bindPopup(popup_0e1e5f3fa303c4e3f068e175c52274bd)
+        ;
+
+        
+    
+    
+            var circle_marker_f5be1c66e79c6bb91c1597910b57d059 = L.circleMarker(
+                [8.238150000000001, -151.23815000000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_22b663227782fcc72ba0e51765aad8d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e1c27c5d711024ee59eb969bd8e6dde = $(`<div id="html_2e1c27c5d711024ee59eb969bd8e6dde" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-48-20<br><b>Concentration:</b> 7.45 kg/m²<br><b>Depth:</b> 4942 m<br><b>Location:</b> 8.238°N, -151.238°W</div>`)[0];
+                popup_22b663227782fcc72ba0e51765aad8d4.setContent(html_2e1c27c5d711024ee59eb969bd8e6dde);
+            
+        
+
+        circle_marker_f5be1c66e79c6bb91c1597910b57d059.bindPopup(popup_22b663227782fcc72ba0e51765aad8d4)
+        ;
+
+        
+    
+    
+            var circle_marker_d3d21859997e356ba74f32421467e96f = L.circleMarker(
+                [9.39685, -150.88],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_de2b76ddee30b2a7c0870fa4503ebf83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_824216cb07b98de428ca0c172d31bb5d = $(`<div id="html_824216cb07b98de428ca0c172d31bb5d" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-04<br><b>Concentration:</b> 10.85 kg/m²<br><b>Depth:</b> 4909 m<br><b>Location:</b> 9.397°N, -150.880°W</div>`)[0];
+                popup_de2b76ddee30b2a7c0870fa4503ebf83.setContent(html_824216cb07b98de428ca0c172d31bb5d);
+            
+        
+
+        circle_marker_d3d21859997e356ba74f32421467e96f.bindPopup(popup_de2b76ddee30b2a7c0870fa4503ebf83)
+        ;
+
+        
+    
+    
+            var circle_marker_ed890c412c65f9ab4c58584314283291 = L.circleMarker(
+                [9.005, -151.18185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_0abc0e60954613867c08e1d666f1ec24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b379e65c22fa4e1f7580d2a2298b4755 = $(`<div id="html_b379e65c22fa4e1f7580d2a2298b4755" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-10<br><b>Concentration:</b> 0.10 kg/m²<br><b>Depth:</b> 5005 m<br><b>Location:</b> 9.005°N, -151.182°W</div>`)[0];
+                popup_0abc0e60954613867c08e1d666f1ec24.setContent(html_b379e65c22fa4e1f7580d2a2298b4755);
+            
+        
+
+        circle_marker_ed890c412c65f9ab4c58584314283291.bindPopup(popup_0abc0e60954613867c08e1d666f1ec24)
+        ;
+
+        
+    
+    
+            var circle_marker_d6050ecd65387cf8416a18d477355d2f = L.circleMarker(
+                [15.237, -126.008],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_2cef37fc21599bc0daca57ad766d4a6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ee8918c877ce3cec9444ab971df6331 = $(`<div id="html_5ee8918c877ce3cec9444ab971df6331" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-18A-34<br><b>Concentration:</b> 7.80 kg/m²<br><b>Depth:</b> 4375 m<br><b>Location:</b> 15.237°N, -126.008°W</div>`)[0];
+                popup_2cef37fc21599bc0daca57ad766d4a6a.setContent(html_5ee8918c877ce3cec9444ab971df6331);
+            
+        
+
+        circle_marker_d6050ecd65387cf8416a18d477355d2f.bindPopup(popup_2cef37fc21599bc0daca57ad766d4a6a)
+        ;
+
+        
+    
+    
+            var circle_marker_d6e5c0bea4bfc1eb74305c5bad5a44b4 = L.circleMarker(
+                [15.193, -126.098],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_2fff9ceb5a50bd648501d7713059a066 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fb59a71df0f705a73b5017294d7d7ac = $(`<div id="html_8fb59a71df0f705a73b5017294d7d7ac" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-12-18<br><b>Concentration:</b> 11.12 kg/m²<br><b>Depth:</b> 4451 m<br><b>Location:</b> 15.193°N, -126.098°W</div>`)[0];
+                popup_2fff9ceb5a50bd648501d7713059a066.setContent(html_8fb59a71df0f705a73b5017294d7d7ac);
+            
+        
+
+        circle_marker_d6e5c0bea4bfc1eb74305c5bad5a44b4.bindPopup(popup_2fff9ceb5a50bd648501d7713059a066)
+        ;
+
+        
+    
+    
+            var circle_marker_2a17e281def5492801ae5fd6d85963f0 = L.circleMarker(
+                [15.758, -126.177],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_665eb7c463df8e0dadffda8c81fad350 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ee834ad1fed4875244e91d246ea0a33 = $(`<div id="html_7ee834ad1fed4875244e91d246ea0a33" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-16B-43<br><b>Concentration:</b> 13.40 kg/m²<br><b>Depth:</b> 4538 m<br><b>Location:</b> 15.758°N, -126.177°W</div>`)[0];
+                popup_665eb7c463df8e0dadffda8c81fad350.setContent(html_7ee834ad1fed4875244e91d246ea0a33);
+            
+        
+
+        circle_marker_2a17e281def5492801ae5fd6d85963f0.bindPopup(popup_665eb7c463df8e0dadffda8c81fad350)
+        ;
+
+        
+    
+    
+            var circle_marker_c5180fd253a2ba94a6be0bd79a88f960 = L.circleMarker(
+                [8.69, -150.25],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_bea117acd242afc5e70f512dcc1b5ae0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36b8d982ea1b9ab122262220e3e003b6 = $(`<div id="html_36b8d982ea1b9ab122262220e3e003b6" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-50-31<br><b>Concentration:</b> 12.10 kg/m²<br><b>Depth:</b> 4870 m<br><b>Location:</b> 8.690°N, -150.250°W</div>`)[0];
+                popup_bea117acd242afc5e70f512dcc1b5ae0.setContent(html_36b8d982ea1b9ab122262220e3e003b6);
+            
+        
+
+        circle_marker_c5180fd253a2ba94a6be0bd79a88f960.bindPopup(popup_bea117acd242afc5e70f512dcc1b5ae0)
+        ;
+
+        
+    
+    
+            var circle_marker_edc9bc7974b5e0a6ece455996e7c041e = L.circleMarker(
+                [15.752, -126.18],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_0458647a222216d8890777ec9b96dc5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70eeb0902d9477bfec399e479186668d = $(`<div id="html_70eeb0902d9477bfec399e479186668d" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-16B-48<br><b>Concentration:</b> 0.80 kg/m²<br><b>Depth:</b> 4583 m<br><b>Location:</b> 15.752°N, -126.180°W</div>`)[0];
+                popup_0458647a222216d8890777ec9b96dc5a.setContent(html_70eeb0902d9477bfec399e479186668d);
+            
+        
+
+        circle_marker_edc9bc7974b5e0a6ece455996e7c041e.bindPopup(popup_0458647a222216d8890777ec9b96dc5a)
+        ;
+
+        
+    
+    
+            var circle_marker_d14961343e9f774c0a74318c47e12fd4 = L.circleMarker(
+                [12.17315, -137.735],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_c30700fbf6cc763834e1c3e0ea54c5f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4747f2041afbfb3075bc80c88704d3a = $(`<div id="html_a4747f2041afbfb3075bc80c88704d3a" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-54-47<br><b>Concentration:</b> 7.65 kg/m²<br><b>Depth:</b> 4833 m<br><b>Location:</b> 12.173°N, -137.735°W</div>`)[0];
+                popup_c30700fbf6cc763834e1c3e0ea54c5f4.setContent(html_a4747f2041afbfb3075bc80c88704d3a);
+            
+        
+
+        circle_marker_d14961343e9f774c0a74318c47e12fd4.bindPopup(popup_c30700fbf6cc763834e1c3e0ea54c5f4)
+        ;
+
+        
+    
+    
+            var circle_marker_a4dde683c3acb8539b4e930308ca1a8d = L.circleMarker(
+                [9.355, -150.8567],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_cf9909fbfe48ba1c56820404f1fe5d80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a0d9bfebc5aec0b3e94f461776cddeb = $(`<div id="html_9a0d9bfebc5aec0b3e94f461776cddeb" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-46-05<br><b>Concentration:</b> 0.10 kg/m²<br><b>Depth:</b> 4999 m<br><b>Location:</b> 9.355°N, -150.857°W</div>`)[0];
+                popup_cf9909fbfe48ba1c56820404f1fe5d80.setContent(html_9a0d9bfebc5aec0b3e94f461776cddeb);
+            
+        
+
+        circle_marker_a4dde683c3acb8539b4e930308ca1a8d.bindPopup(popup_cf9909fbfe48ba1c56820404f1fe5d80)
+        ;
+
+        
+    
+    
+            var circle_marker_4811098b08316cd0d788a0f4c65107ef = L.circleMarker(
+                [15.10685, -126.04685],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_ce6d62dddd9eabc3760ffa12e546c034 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb89806a98fc1c1bec3767ae105666a7 = $(`<div id="html_bb89806a98fc1c1bec3767ae105666a7" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-22-28<br><b>Concentration:</b> 15.43 kg/m²<br><b>Depth:</b> 4641 m<br><b>Location:</b> 15.107°N, -126.047°W</div>`)[0];
+                popup_ce6d62dddd9eabc3760ffa12e546c034.setContent(html_bb89806a98fc1c1bec3767ae105666a7);
+            
+        
+
+        circle_marker_4811098b08316cd0d788a0f4c65107ef.bindPopup(popup_ce6d62dddd9eabc3760ffa12e546c034)
+        ;
+
+        
+    
+    
+            var circle_marker_9c5f3a2ca192ef725cc03cba249ff522 = L.circleMarker(
+                [14.25, -126.192],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_9044d3264d08e2f3a1e6bc9def79eafa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_575fc4d90538fb8fbc304666113bdc17 = $(`<div id="html_575fc4d90538fb8fbc304666113bdc17" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-6-18<br><b>Concentration:</b> 25.90 kg/m²<br><b>Depth:</b> 4430 m<br><b>Location:</b> 14.250°N, -126.192°W</div>`)[0];
+                popup_9044d3264d08e2f3a1e6bc9def79eafa.setContent(html_575fc4d90538fb8fbc304666113bdc17);
+            
+        
+
+        circle_marker_9c5f3a2ca192ef725cc03cba249ff522.bindPopup(popup_9044d3264d08e2f3a1e6bc9def79eafa)
+        ;
+
+        
+    
+    
+            var circle_marker_e2e497cecb0482076ef9af995c7698fd = L.circleMarker(
+                [9.04185, -151.17685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_7fff98c91ca47903f1bbd09bae7d93fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3f61c7c293a16bf326ac2b088ab4621 = $(`<div id="html_f3f61c7c293a16bf326ac2b088ab4621" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-11<br><b>Concentration:</b> 1.90 kg/m²<br><b>Depth:</b> 4951 m<br><b>Location:</b> 9.042°N, -151.177°W</div>`)[0];
+                popup_7fff98c91ca47903f1bbd09bae7d93fa.setContent(html_f3f61c7c293a16bf326ac2b088ab4621);
+            
+        
+
+        circle_marker_e2e497cecb0482076ef9af995c7698fd.bindPopup(popup_7fff98c91ca47903f1bbd09bae7d93fa)
+        ;
+
+        
+    
+    
+            var circle_marker_f54c3d57c16eda40bd3c6e283a51ab99 = L.circleMarker(
+                [11.81, -137.47185000000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_239323c675816d65746f82bd1b80bfbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ef13d138b9859bee0d4d8447abce4a4 = $(`<div id="html_0ef13d138b9859bee0d4d8447abce4a4" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-55-53<br><b>Concentration:</b> 0.70 kg/m²<br><b>Depth:</b> 4765 m<br><b>Location:</b> 11.810°N, -137.472°W</div>`)[0];
+                popup_239323c675816d65746f82bd1b80bfbf.setContent(html_0ef13d138b9859bee0d4d8447abce4a4);
+            
+        
+
+        circle_marker_f54c3d57c16eda40bd3c6e283a51ab99.bindPopup(popup_239323c675816d65746f82bd1b80bfbf)
+        ;
+
+        
+    
+    
+            var circle_marker_07380e5425014f81d9d3b7f8f784cc01 = L.circleMarker(
+                [15.14, -126.045],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_dd88a95706c06561554342facf3d8548 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38479a10753a9502be263ba418831b47 = $(`<div id="html_38479a10753a9502be263ba418831b47" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-15-21<br><b>Concentration:</b> 10.91 kg/m²<br><b>Depth:</b> 4501 m<br><b>Location:</b> 15.140°N, -126.045°W</div>`)[0];
+                popup_dd88a95706c06561554342facf3d8548.setContent(html_38479a10753a9502be263ba418831b47);
+            
+        
+
+        circle_marker_07380e5425014f81d9d3b7f8f784cc01.bindPopup(popup_dd88a95706c06561554342facf3d8548)
+        ;
+
+        
+    
+    
+            var circle_marker_acc65ef54bdf903790e746d854d06be7 = L.circleMarker(
+                [12.148150000000001, -137.74315],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_45a07263b88d11364716a3ef89b1fee6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_643d7fc295e0478464bc10faa596c795 = $(`<div id="html_643d7fc295e0478464bc10faa596c795" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-54-51<br><b>Concentration:</b> 17.20 kg/m²<br><b>Depth:</b> 4837 m<br><b>Location:</b> 12.148°N, -137.743°W</div>`)[0];
+                popup_45a07263b88d11364716a3ef89b1fee6.setContent(html_643d7fc295e0478464bc10faa596c795);
+            
+        
+
+        circle_marker_acc65ef54bdf903790e746d854d06be7.bindPopup(popup_45a07263b88d11364716a3ef89b1fee6)
+        ;
+
+        
+    
+    
+            var circle_marker_6cb534f748980bfa2984ff1f09c5e4f7 = L.circleMarker(
+                [15.258, -126.485],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_b64e8103657d5459843662ea7ad376a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e45465b323fec9613a0613c332cb687 = $(`<div id="html_2e45465b323fec9613a0613c332cb687" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-14-40<br><b>Concentration:</b> 9.00 kg/m²<br><b>Depth:</b> 4500 m<br><b>Location:</b> 15.258°N, -126.485°W</div>`)[0];
+                popup_b64e8103657d5459843662ea7ad376a3.setContent(html_2e45465b323fec9613a0613c332cb687);
+            
+        
+
+        circle_marker_6cb534f748980bfa2984ff1f09c5e4f7.bindPopup(popup_b64e8103657d5459843662ea7ad376a3)
+        ;
+
+        
+    
+    
+            var circle_marker_d9fc0be5c88ac49a0060ed06142da0f5 = L.circleMarker(
+                [11.69315, -139.18315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_2fbcae60cfc7bf2a0734d71da739e348 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_353f012ad04f13ea0932a258aa9ff366 = $(`<div id="html_353f012ad04f13ea0932a258aa9ff366" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-51-33<br><b>Concentration:</b> 0.95 kg/m²<br><b>Depth:</b> 4785 m<br><b>Location:</b> 11.693°N, -139.183°W</div>`)[0];
+                popup_2fbcae60cfc7bf2a0734d71da739e348.setContent(html_353f012ad04f13ea0932a258aa9ff366);
+            
+        
+
+        circle_marker_d9fc0be5c88ac49a0060ed06142da0f5.bindPopup(popup_2fbcae60cfc7bf2a0734d71da739e348)
+        ;
+
+        
+    
+    
+            var circle_marker_c5d82d0112598c891171b4a1fdb3be5c = L.circleMarker(
+                [8.275, -151.12185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_a192e084c075b52f9cd583d81933671d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4429ac3d832db5f77f600851cfa74aa4 = $(`<div id="html_4429ac3d832db5f77f600851cfa74aa4" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-48-19<br><b>Concentration:</b> 4.25 kg/m²<br><b>Depth:</b> 4942 m<br><b>Location:</b> 8.275°N, -151.122°W</div>`)[0];
+                popup_a192e084c075b52f9cd583d81933671d.setContent(html_4429ac3d832db5f77f600851cfa74aa4);
+            
+        
+
+        circle_marker_c5d82d0112598c891171b4a1fdb3be5c.bindPopup(popup_a192e084c075b52f9cd583d81933671d)
+        ;
+
+        
+    
+    
+            var circle_marker_799e857a309d2a3b6ba88584b6afc80d = L.circleMarker(
+                [9.03815, -151.18685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_07d05c5a5c55ed1f55d3d44134ef3dee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca9e8816ad274d4f03990a06ed07ca92 = $(`<div id="html_ca9e8816ad274d4f03990a06ed07ca92" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-47-13<br><b>Concentration:</b> 1.70 kg/m²<br><b>Depth:</b> 4938 m<br><b>Location:</b> 9.038°N, -151.187°W</div>`)[0];
+                popup_07d05c5a5c55ed1f55d3d44134ef3dee.setContent(html_ca9e8816ad274d4f03990a06ed07ca92);
+            
+        
+
+        circle_marker_799e857a309d2a3b6ba88584b6afc80d.bindPopup(popup_07d05c5a5c55ed1f55d3d44134ef3dee)
+        ;
+
+        
+    
+    
+            var circle_marker_20df3c5645d8b1f6cecf7a4f9134cbc1 = L.circleMarker(
+                [15.25685, -125.98814999999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_198295750623a067530e875ee2a09827 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6397bfca4de06c51dc77e11d1ceba0b8 = $(`<div id="html_6397bfca4de06c51dc77e11d1ceba0b8" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-3-8<br><b>Concentration:</b> 1.79 kg/m²<br><b>Depth:</b> 4363 m<br><b>Location:</b> 15.257°N, -125.988°W</div>`)[0];
+                popup_198295750623a067530e875ee2a09827.setContent(html_6397bfca4de06c51dc77e11d1ceba0b8);
+            
+        
+
+        circle_marker_20df3c5645d8b1f6cecf7a4f9134cbc1.bindPopup(popup_198295750623a067530e875ee2a09827)
+        ;
+
+        
+    
+    
+            var circle_marker_57d4afda01b47b0891af6b5917e52595 = L.circleMarker(
+                [11.225, -139.12815],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_0939a13205c6d4ecfa88970d441531fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_558772afe7e38f865ed79359d66e141d = $(`<div id="html_558772afe7e38f865ed79359d66e141d" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-52-41<br><b>Concentration:</b> 2.25 kg/m²<br><b>Depth:</b> 4756 m<br><b>Location:</b> 11.225°N, -139.128°W</div>`)[0];
+                popup_0939a13205c6d4ecfa88970d441531fa.setContent(html_558772afe7e38f865ed79359d66e141d);
+            
+        
+
+        circle_marker_57d4afda01b47b0891af6b5917e52595.bindPopup(popup_0939a13205c6d4ecfa88970d441531fa)
+        ;
+
+        
+    
+    
+            var circle_marker_facb81436d7886621bb7ed2b65d3bb0e = L.circleMarker(
+                [8.30185, -151.15814999999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_0c9868f48045372922ccbda9713dea0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42aa7a36648ebcaeb6b702b464b55134 = $(`<div id="html_42aa7a36648ebcaeb6b702b464b55134" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-48-23<br><b>Concentration:</b> 0.20 kg/m²<br><b>Depth:</b> 5040 m<br><b>Location:</b> 8.302°N, -151.158°W</div>`)[0];
+                popup_0c9868f48045372922ccbda9713dea0f.setContent(html_42aa7a36648ebcaeb6b702b464b55134);
+            
+        
+
+        circle_marker_facb81436d7886621bb7ed2b65d3bb0e.bindPopup(popup_0c9868f48045372922ccbda9713dea0f)
+        ;
+
+        
+    
+    
+            var circle_marker_d2671b90ea10cb4ed7f0ea67fd4a5298 = L.circleMarker(
+                [15.195, -126.065],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_e048cc277747647ef1607b2721692692 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d25ceda806fa6caf93f7c2c0de4fdb2 = $(`<div id="html_0d25ceda806fa6caf93f7c2c0de4fdb2" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-11-16<br><b>Concentration:</b> 15.66 kg/m²<br><b>Depth:</b> 4524 m<br><b>Location:</b> 15.195°N, -126.065°W</div>`)[0];
+                popup_e048cc277747647ef1607b2721692692.setContent(html_0d25ceda806fa6caf93f7c2c0de4fdb2);
+            
+        
+
+        circle_marker_d2671b90ea10cb4ed7f0ea67fd4a5298.bindPopup(popup_e048cc277747647ef1607b2721692692)
+        ;
+
+        
+    
+    
+            var circle_marker_2830604fbb85548a9a09fec0ce8d4fc9 = L.circleMarker(
+                [8.73, -150.31185],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_67baf5373ec9d8b03716f736762c9759 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01ba263ce5cc831b85cff687f6793c1d = $(`<div id="html_01ba263ce5cc831b85cff687f6793c1d" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-50-29<br><b>Concentration:</b> 15.65 kg/m²<br><b>Depth:</b> 4933 m<br><b>Location:</b> 8.730°N, -150.312°W</div>`)[0];
+                popup_67baf5373ec9d8b03716f736762c9759.setContent(html_01ba263ce5cc831b85cff687f6793c1d);
+            
+        
+
+        circle_marker_2830604fbb85548a9a09fec0ce8d4fc9.bindPopup(popup_67baf5373ec9d8b03716f736762c9759)
+        ;
+
+        
+    
+    
+            var circle_marker_68e8ae744fcf93e3969f551230e68029 = L.circleMarker(
+                [15.205, -125.86815],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_bfc9492c4eca0a06ed32d6c746fa9f6c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fce7651c514ccb89c3907ec9cf168fc = $(`<div id="html_4fce7651c514ccb89c3907ec9cf168fc" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-7-12<br><b>Concentration:</b> 9.47 kg/m²<br><b>Depth:</b> 4601 m<br><b>Location:</b> 15.205°N, -125.868°W</div>`)[0];
+                popup_bfc9492c4eca0a06ed32d6c746fa9f6c.setContent(html_4fce7651c514ccb89c3907ec9cf168fc);
+            
+        
+
+        circle_marker_68e8ae744fcf93e3969f551230e68029.bindPopup(popup_bfc9492c4eca0a06ed32d6c746fa9f6c)
+        ;
+
+        
+    
+    
+            var circle_marker_4b79ed2ad9ac0fac1c5d19e74fde3bec = L.circleMarker(
+                [8.685, -150.25185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_29866de93dbd58febd0bb3770de55ddf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec42771fa6afb6b4f56278241935bc0e = $(`<div id="html_ec42771fa6afb6b4f56278241935bc0e" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-50-30<br><b>Concentration:</b> 6.45 kg/m²<br><b>Depth:</b> 4831 m<br><b>Location:</b> 8.685°N, -150.252°W</div>`)[0];
+                popup_29866de93dbd58febd0bb3770de55ddf.setContent(html_ec42771fa6afb6b4f56278241935bc0e);
+            
+        
+
+        circle_marker_4b79ed2ad9ac0fac1c5d19e74fde3bec.bindPopup(popup_29866de93dbd58febd0bb3770de55ddf)
+        ;
+
+        
+    
+    
+            var circle_marker_8806bad974e3fdd597f0bc5fe1862cb4 = L.circleMarker(
+                [15.09815, -126.035],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_042bcb88d83292844ea9a16cf5494006 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34f6f750b095155ec2a593d6d8be9f8a = $(`<div id="html_34f6f750b095155ec2a593d6d8be9f8a" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-21-27<br><b>Concentration:</b> 16.18 kg/m²<br><b>Depth:</b> 4522 m<br><b>Location:</b> 15.098°N, -126.035°W</div>`)[0];
+                popup_042bcb88d83292844ea9a16cf5494006.setContent(html_34f6f750b095155ec2a593d6d8be9f8a);
+            
+        
+
+        circle_marker_8806bad974e3fdd597f0bc5fe1862cb4.bindPopup(popup_042bcb88d83292844ea9a16cf5494006)
+        ;
+
+        
+    
+    
+            var circle_marker_e459286ca14ebd79595c714525b6a537 = L.circleMarker(
+                [12.142, -137.767],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_34528c998cb31f86cec4c5d1d6253592 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f64a5fb6605f563db0146d47f8c0e16d = $(`<div id="html_f64a5fb6605f563db0146d47f8c0e16d" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-54-50<br><b>Concentration:</b> 2.60 kg/m²<br><b>Depth:</b> 4978 m<br><b>Location:</b> 12.142°N, -137.767°W</div>`)[0];
+                popup_34528c998cb31f86cec4c5d1d6253592.setContent(html_f64a5fb6605f563db0146d47f8c0e16d);
+            
+        
+
+        circle_marker_e459286ca14ebd79595c714525b6a537.bindPopup(popup_34528c998cb31f86cec4c5d1d6253592)
+        ;
+
+        
+    
+    
+            var circle_marker_652208c5319625929f6d1501ec4e0ad3 = L.circleMarker(
+                [8.45815, -150.77814999999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_ed1d7c3d05dc63afd1c5858febaebd3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce284f2a6ad53aae0bce7f8db757b239 = $(`<div id="html_ce284f2a6ad53aae0bce7f8db757b239" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-48-24<br><b>Concentration:</b> 0.40 kg/m²<br><b>Depth:</b> 4927 m<br><b>Location:</b> 8.458°N, -150.778°W</div>`)[0];
+                popup_ed1d7c3d05dc63afd1c5858febaebd3f.setContent(html_ce284f2a6ad53aae0bce7f8db757b239);
+            
+        
+
+        circle_marker_652208c5319625929f6d1501ec4e0ad3.bindPopup(popup_ed1d7c3d05dc63afd1c5858febaebd3f)
+        ;
+
+        
+    
+    
+            var circle_marker_8b3d6f9f212ec9098c81367fd949cfb6 = L.circleMarker(
+                [15.20685, -125.95315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_73bbd109fc1cf46bb922ff9a7933fa8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45e3a6bcb06822fa72dbc1f0e1244a53 = $(`<div id="html_45e3a6bcb06822fa72dbc1f0e1244a53" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-8-13<br><b>Concentration:</b> 7.59 kg/m²<br><b>Depth:</b> 4367 m<br><b>Location:</b> 15.207°N, -125.953°W</div>`)[0];
+                popup_73bbd109fc1cf46bb922ff9a7933fa8a.setContent(html_45e3a6bcb06822fa72dbc1f0e1244a53);
+            
+        
+
+        circle_marker_8b3d6f9f212ec9098c81367fd949cfb6.bindPopup(popup_73bbd109fc1cf46bb922ff9a7933fa8a)
+        ;
+
+        
+    
+    
+            var circle_marker_f2a1421c005a8f8c6164e5787ec7e984 = L.circleMarker(
+                [15.233, -126.007],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_cbbe9c55bdbf1381beba61d3197a9ac7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10edab230af5b00385aeae665113bd82 = $(`<div id="html_10edab230af5b00385aeae665113bd82" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-18A-33<br><b>Concentration:</b> 4.90 kg/m²<br><b>Depth:</b> 4383 m<br><b>Location:</b> 15.233°N, -126.007°W</div>`)[0];
+                popup_cbbe9c55bdbf1381beba61d3197a9ac7.setContent(html_10edab230af5b00385aeae665113bd82);
+            
+        
+
+        circle_marker_f2a1421c005a8f8c6164e5787ec7e984.bindPopup(popup_cbbe9c55bdbf1381beba61d3197a9ac7)
+        ;
+
+        
+    
+    
+            var circle_marker_7ea84622426fd3ac06f950064a49deeb = L.circleMarker(
+                [15.24315, -126.02685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d5b834c40f5516c1ea14861a45e250f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70bac4c1d32de70e816a654281a6e357 = $(`<div id="html_70bac4c1d32de70e816a654281a6e357" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-4-9<br><b>Concentration:</b> 7.96 kg/m²<br><b>Depth:</b> 4490 m<br><b>Location:</b> 15.243°N, -126.027°W</div>`)[0];
+                popup_d5b834c40f5516c1ea14861a45e250f6.setContent(html_70bac4c1d32de70e816a654281a6e357);
+            
+        
+
+        circle_marker_7ea84622426fd3ac06f950064a49deeb.bindPopup(popup_d5b834c40f5516c1ea14861a45e250f6)
+        ;
+
+        
+    
+    
+            var circle_marker_ff7fd699111de9e6b9dd5ba463f5c21a = L.circleMarker(
+                [8.475, -150.74185],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_43fc168a7bbd021d868632e58caeefe6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c77e36ce043ac838eea4ffa3841f56e = $(`<div id="html_3c77e36ce043ac838eea4ffa3841f56e" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-49-25<br><b>Concentration:</b> 11.35 kg/m²<br><b>Depth:</b> 4905 m<br><b>Location:</b> 8.475°N, -150.742°W</div>`)[0];
+                popup_43fc168a7bbd021d868632e58caeefe6.setContent(html_3c77e36ce043ac838eea4ffa3841f56e);
+            
+        
+
+        circle_marker_ff7fd699111de9e6b9dd5ba463f5c21a.bindPopup(popup_43fc168a7bbd021d868632e58caeefe6)
+        ;
+
+        
+    
+    
+            var circle_marker_6e49fa3c08542254dea163eed81e76ed = L.circleMarker(
+                [15.248, -125.973],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_37db16e8a8c841daa124a90ec4588e99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d772071c7b866713b0d00ea4bd892e3f = $(`<div id="html_d772071c7b866713b0d00ea4bd892e3f" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-18A-32<br><b>Concentration:</b> 1.40 kg/m²<br><b>Depth:</b> 4423 m<br><b>Location:</b> 15.248°N, -125.973°W</div>`)[0];
+                popup_37db16e8a8c841daa124a90ec4588e99.setContent(html_d772071c7b866713b0d00ea4bd892e3f);
+            
+        
+
+        circle_marker_6e49fa3c08542254dea163eed81e76ed.bindPopup(popup_37db16e8a8c841daa124a90ec4588e99)
+        ;
+
+        
+    
+    
+            var circle_marker_007f8fb709d6bae87455d0a32d81ffce = L.circleMarker(
+                [8.50315, -150.79685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d0444cc24eb8dc822d52511dcd163e8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45bbbafab83c6a8edc43b3d6b4da5147 = $(`<div id="html_45bbbafab83c6a8edc43b3d6b4da5147" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-49-27<br><b>Concentration:</b> 8.55 kg/m²<br><b>Depth:</b> 4938 m<br><b>Location:</b> 8.503°N, -150.797°W</div>`)[0];
+                popup_d0444cc24eb8dc822d52511dcd163e8e.setContent(html_45bbbafab83c6a8edc43b3d6b4da5147);
+            
+        
+
+        circle_marker_007f8fb709d6bae87455d0a32d81ffce.bindPopup(popup_d0444cc24eb8dc822d52511dcd163e8e)
+        ;
+
+        
+    
+    
+            var circle_marker_f1217cbbf2a620f8c7fbc37a939d049c = L.circleMarker(
+                [15.18185, -125.89314999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_19c5924203e454d935226b461a599d93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49420753fff05f7e14100a586e710af8 = $(`<div id="html_49420753fff05f7e14100a586e710af8" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-6-11<br><b>Concentration:</b> 10.97 kg/m²<br><b>Depth:</b> 4442 m<br><b>Location:</b> 15.182°N, -125.893°W</div>`)[0];
+                popup_19c5924203e454d935226b461a599d93.setContent(html_49420753fff05f7e14100a586e710af8);
+            
+        
+
+        circle_marker_f1217cbbf2a620f8c7fbc37a939d049c.bindPopup(popup_19c5924203e454d935226b461a599d93)
+        ;
+
+        
+    
+    
+            var circle_marker_f8b99b34cfb7652968fa39d92056f472 = L.circleMarker(
+                [15.297, -125.473],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d2dc6b834f877c0abfdd8960f0fd51bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efd2fffb3a2151afdaf48513b808bbbc = $(`<div id="html_efd2fffb3a2151afdaf48513b808bbbc" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-58-60<br><b>Concentration:</b> 7.70 kg/m²<br><b>Depth:</b> 4298 m<br><b>Location:</b> 15.297°N, -125.473°W</div>`)[0];
+                popup_d2dc6b834f877c0abfdd8960f0fd51bd.setContent(html_efd2fffb3a2151afdaf48513b808bbbc);
+            
+        
+
+        circle_marker_f8b99b34cfb7652968fa39d92056f472.bindPopup(popup_d2dc6b834f877c0abfdd8960f0fd51bd)
+        ;
+
+        
+    
+    
+            var circle_marker_737770b81c9f665134d4f8ee98ac3d8f = L.circleMarker(
+                [11.738150000000001, -138.35315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_cb03828b016bcd2f0acb585c46a26e6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b29b49558d64b3a24488a1ddb7654016 = $(`<div id="html_b29b49558d64b3a24488a1ddb7654016" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-53-46<br><b>Concentration:</b> 0.03 kg/m²<br><b>Depth:</b> 4833 m<br><b>Location:</b> 11.738°N, -138.353°W</div>`)[0];
+                popup_cb03828b016bcd2f0acb585c46a26e6b.setContent(html_b29b49558d64b3a24488a1ddb7654016);
+            
+        
+
+        circle_marker_737770b81c9f665134d4f8ee98ac3d8f.bindPopup(popup_cb03828b016bcd2f0acb585c46a26e6b)
+        ;
+
+        
+    
+    
+            var circle_marker_2376c77a29862704f6bf5149b8a56b83 = L.circleMarker(
+                [11.72185, -138.37315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_eba29237a32b6faf5a4715210f7dbc63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e26d67ee3fb00ae4be184b2a09435921 = $(`<div id="html_e26d67ee3fb00ae4be184b2a09435921" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-53-44<br><b>Concentration:</b> 0.02 kg/m²<br><b>Depth:</b> 4902 m<br><b>Location:</b> 11.722°N, -138.373°W</div>`)[0];
+                popup_eba29237a32b6faf5a4715210f7dbc63.setContent(html_e26d67ee3fb00ae4be184b2a09435921);
+            
+        
+
+        circle_marker_2376c77a29862704f6bf5149b8a56b83.bindPopup(popup_eba29237a32b6faf5a4715210f7dbc63)
+        ;
+
+        
+    
+    
+            var circle_marker_8251c1169795f639e926d76b99665cf0 = L.circleMarker(
+                [12.16, -137.70685],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_16f2cbe9dfc7262f9361aed9b1164d1a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a398995098668812df6f2a508cc11589 = $(`<div id="html_a398995098668812df6f2a508cc11589" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-54-52<br><b>Concentration:</b> 14.70 kg/m²<br><b>Depth:</b> 4855 m<br><b>Location:</b> 12.160°N, -137.707°W</div>`)[0];
+                popup_16f2cbe9dfc7262f9361aed9b1164d1a.setContent(html_a398995098668812df6f2a508cc11589);
+            
+        
+
+        circle_marker_8251c1169795f639e926d76b99665cf0.bindPopup(popup_16f2cbe9dfc7262f9361aed9b1164d1a)
+        ;
+
+        
+    
+    
+            var circle_marker_5f253d0248120a7afd7676fe9e0e9b3b = L.circleMarker(
+                [15.136849999999999, -126.10685000000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_4d73adbd3589b36564f9a65df5dedec3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6769898cb72ea162f4d53f070b0bfa6c = $(`<div id="html_6769898cb72ea162f4d53f070b0bfa6c" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-13-19<br><b>Concentration:</b> 11.26 kg/m²<br><b>Depth:</b> 4481 m<br><b>Location:</b> 15.137°N, -126.107°W</div>`)[0];
+                popup_4d73adbd3589b36564f9a65df5dedec3.setContent(html_6769898cb72ea162f4d53f070b0bfa6c);
+            
+        
+
+        circle_marker_5f253d0248120a7afd7676fe9e0e9b3b.bindPopup(popup_4d73adbd3589b36564f9a65df5dedec3)
+        ;
+
+        
+    
+    
+            var circle_marker_5b3aaf39f5efb45d1982e38246bd7804 = L.circleMarker(
+                [11.248199999999999, -139.09],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_95ea09695971258f0a9aadb807ec545a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d36cc487a6f1e9826350ab276467bf2 = $(`<div id="html_0d36cc487a6f1e9826350ab276467bf2" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-52-38<br><b>Concentration:</b> 2.23 kg/m²<br><b>Depth:</b> 4832 m<br><b>Location:</b> 11.248°N, -139.090°W</div>`)[0];
+                popup_95ea09695971258f0a9aadb807ec545a.setContent(html_0d36cc487a6f1e9826350ab276467bf2);
+            
+        
+
+        circle_marker_5b3aaf39f5efb45d1982e38246bd7804.bindPopup(popup_95ea09695971258f0a9aadb807ec545a)
+        ;
+
+        
+    
+    
+            var circle_marker_c4ba68d131b04c22b30cf6b819f70faf = L.circleMarker(
+                [11.80315, -137.43815],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_13fa08da8df23630d5085c9455a4a4dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54ad991440871caaf22d72c0faaeb903 = $(`<div id="html_54ad991440871caaf22d72c0faaeb903" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-55-55<br><b>Concentration:</b> 14.85 kg/m²<br><b>Depth:</b> 4759 m<br><b>Location:</b> 11.803°N, -137.438°W</div>`)[0];
+                popup_13fa08da8df23630d5085c9455a4a4dc.setContent(html_54ad991440871caaf22d72c0faaeb903);
+            
+        
+
+        circle_marker_c4ba68d131b04c22b30cf6b819f70faf.bindPopup(popup_13fa08da8df23630d5085c9455a4a4dc)
+        ;
+
+        
+    
+    
+            var circle_marker_7bd039efdd011a3527f7339d28c7250e = L.circleMarker(
+                [11.73185, -138.37],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d4d7b208c2d7c4584b42491a3d761328 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c79648a6de5da74ee0dcd7d66e648245 = $(`<div id="html_c79648a6de5da74ee0dcd7d66e648245" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-53-45<br><b>Concentration:</b> 2.95 kg/m²<br><b>Depth:</b> 4887 m<br><b>Location:</b> 11.732°N, -138.370°W</div>`)[0];
+                popup_d4d7b208c2d7c4584b42491a3d761328.setContent(html_c79648a6de5da74ee0dcd7d66e648245);
+            
+        
+
+        circle_marker_7bd039efdd011a3527f7339d28c7250e.bindPopup(popup_d4d7b208c2d7c4584b42491a3d761328)
+        ;
+
+        
+    
+    
+            var circle_marker_5bbcc59747204aa0eb6f1b4cb2d8a5f4 = L.circleMarker(
+                [15.748, -126.168],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_874cef1f2f17ecc705abea8c3559a7b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a41fdd8526016e1e647c39c65783614b = $(`<div id="html_a41fdd8526016e1e647c39c65783614b" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-16B-45<br><b>Concentration:</b> 5.30 kg/m²<br><b>Depth:</b> 4648 m<br><b>Location:</b> 15.748°N, -126.168°W</div>`)[0];
+                popup_874cef1f2f17ecc705abea8c3559a7b7.setContent(html_a41fdd8526016e1e647c39c65783614b);
+            
+        
+
+        circle_marker_5bbcc59747204aa0eb6f1b4cb2d8a5f4.bindPopup(popup_874cef1f2f17ecc705abea8c3559a7b7)
+        ;
+
+        
+    
+    
+            var circle_marker_86cfdf2b51c3f9eb8b84e089fbee4a46 = L.circleMarker(
+                [8.71815, -150.235],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_ad5c2ede1278239a2b56b85201b3861c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42b3eb298ffd59a05aceb9f99ee95b38 = $(`<div id="html_42b3eb298ffd59a05aceb9f99ee95b38" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC75-50-32<br><b>Concentration:</b> 7.55 kg/m²<br><b>Depth:</b> 4852 m<br><b>Location:</b> 8.718°N, -150.235°W</div>`)[0];
+                popup_ad5c2ede1278239a2b56b85201b3861c.setContent(html_42b3eb298ffd59a05aceb9f99ee95b38);
+            
+        
+
+        circle_marker_86cfdf2b51c3f9eb8b84e089fbee4a46.bindPopup(popup_ad5c2ede1278239a2b56b85201b3861c)
+        ;
+
+        
+    
+    
+            var circle_marker_def71f3ef51060c9eab4267d7cf0a273 = L.circleMarker(
+                [15.136849999999999, -126.06184999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d6b70ed641eefbe20e19f6377415c970 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89cfe4913dac1f3d9bceb889dcc6e769 = $(`<div id="html_89cfe4913dac1f3d9bceb889dcc6e769" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-14-20<br><b>Concentration:</b> 17.81 kg/m²<br><b>Depth:</b> 4586 m<br><b>Location:</b> 15.137°N, -126.062°W</div>`)[0];
+                popup_d6b70ed641eefbe20e19f6377415c970.setContent(html_89cfe4913dac1f3d9bceb889dcc6e769);
+            
+        
+
+        circle_marker_def71f3ef51060c9eab4267d7cf0a273.bindPopup(popup_d6b70ed641eefbe20e19f6377415c970)
+        ;
+
+        
+    
+    
+            var circle_marker_ffa1a41100a47825f788a2595e9a7c86 = L.circleMarker(
+                [16.008, -124.993],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_d2757a82885c0dda8f26247e571cc91d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74a247134f7e72eb54353ce6f38cf04e = $(`<div id="html_74a247134f7e72eb54353ce6f38cf04e" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-27-52<br><b>Concentration:</b> 6.10 kg/m²<br><b>Depth:</b> 4376 m<br><b>Location:</b> 16.008°N, -124.993°W</div>`)[0];
+                popup_d2757a82885c0dda8f26247e571cc91d.setContent(html_74a247134f7e72eb54353ce6f38cf04e);
+            
+        
+
+        circle_marker_ffa1a41100a47825f788a2595e9a7c86.bindPopup(popup_d2757a82885c0dda8f26247e571cc91d)
+        ;
+
+        
+    
+    
+            var circle_marker_c76e606df23acf94681501e63e194fa7 = L.circleMarker(
+                [15.19, -126.03685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_7654b5f5b5ffc11c4ff51bbc2c454dd6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_978b9b4eec12d4b9eb469fda6e210859 = $(`<div id="html_978b9b4eec12d4b9eb469fda6e210859" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP8OC76-10-15<br><b>Concentration:</b> 7.00 kg/m²<br><b>Depth:</b> 4516 m<br><b>Location:</b> 15.190°N, -126.037°W</div>`)[0];
+                popup_7654b5f5b5ffc11c4ff51bbc2c454dd6.setContent(html_978b9b4eec12d4b9eb469fda6e210859);
+            
+        
+
+        circle_marker_c76e606df23acf94681501e63e194fa7.bindPopup(popup_7654b5f5b5ffc11c4ff51bbc2c454dd6)
+        ;
+
+        
+    
+    
+            var circle_marker_c7cc35eb6223d1af418fad7d40af48c8 = L.circleMarker(
+                [15.203, -125.977],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_a86329aa162517b5d29e50d9498d10e4);
+        
+    
+        var popup_80b7fce53d979c5aafe8c773f91556d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e59433bfb7fcd60fbda219d4783a1e0 = $(`<div id="html_2e59433bfb7fcd60fbda219d4783a1e0" style="width: 100.0%; height: 100.0%;"><b>Event:</b> RP6OC75-18B-37<br><b>Concentration:</b> 7.70 kg/m²<br><b>Depth:</b> 4447 m<br><b>Location:</b> 15.203°N, -125.977°W</div>`)[0];
+                popup_80b7fce53d979c5aafe8c773f91556d6.setContent(html_2e59433bfb7fcd60fbda219d4783a1e0);
+            
+        
+
+        circle_marker_c7cc35eb6223d1af418fad7d40af48c8.bindPopup(popup_80b7fce53d979c5aafe8c773f91556d6)
+        ;
+
+        
+    
+</script>
+</html>

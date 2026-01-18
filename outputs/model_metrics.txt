@@ -1,0 +1,24 @@
+Manganese Nodule Concentration Prediction Model
+==================================================
+
+Training samples: 89
+Features: 12
+
+Leave-One-Out Cross-Validation Results:
+  RMSE: 4.528 kg/m²
+  MAE:  3.629 kg/m²
+  R²:   0.304
+
+Feature Importance:
+  lon_cos: 0.254
+  lon_sin: 0.150
+  lat_sin: 0.129
+  lat_cos: 0.103
+  depth_m: 0.098
+  depth_squared: 0.068
+  aspect_sin: 0.049
+  depth_log: 0.039
+  roughness_m: 0.038
+  aspect_cos: 0.037
+  slope: 0.035
+  in_optimal_zone: 0.000

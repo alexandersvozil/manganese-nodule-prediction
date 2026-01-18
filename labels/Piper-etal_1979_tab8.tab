@@ -1,0 +1,88 @@
+Event	Latitude	Longitude	Elevation [m]	Method/Device	ID	Depth sed [m]	Cov [%]	Size [mm]	Conc [kg/m**2]	Texture	Deposit type
+RP8OC75-46-01	9.345	-150.845	-5057	Box corer	RP8OC75-46-01-1PN	0	10.0	22	1.8	Smooth	Mn nodule
+RP8OC75-46-04	9.397	-150.880	-4909	Box corer	RP8OC75-46-04-1PN	0	30.0	27	6.5	Smooth	Mn nodule
+RP8OC75-46-06	9.400	-150.832	-5121	Box corer	RP8OC75-46-06-1PN	0	25.0	17	3.4	Smooth	Mn nodule
+RP8OC75-46-07	9.327	-150.845	-5012	Box corer	RP8OC75-46-07-1PN	0	50.0	15	6.0	Smooth	Mn nodule
+RP8OC75-46-08	9.318	-150.840	-5108	Box corer	RP8OC75-46-08-1PN	0	55.0	16	7.0	Smooth	Mn nodule
+RP8OC75-46-09	9.333	-150.807	-4745	Box corer	RP8OC75-46-09-1PN	0	25.0	27	5.4	Smooth	Mn nodule
+RP8OC75-47-10	9.005	-151.182	-5005	Box corer	RP8OC75-47-10-1PN	0	0.0	0			Mn nodule
+RP8OC75-47-11	9.042	-151.177	-4951	Box corer	RP8OC75-47-11-1PN	0	5.0	54	2.2	Mixture of smooth and granular	Mn nodule
+RP8OC75-47-12	9.058	-151.185	-4907	Box corer	RP8OC75-47-12-1PN	0	20.0	43	6.9	Mixture of smooth and granular	Mn nodule
+RP8OC75-47-13	9.038	-151.187	-4938	Box corer	RP8OC75-47-13-1PN	0	7.0	33	1.8	Granular	Mn nodule
+RP8OC75-47-14	9.067	-151.237	-5007	Box corer	RP8OC75-47-14-1PN	0	4.0	48	1.5	Granular	Mn nodule
+RP8OC75-47-15	9.080	-151.185	-5012	Box corer	RP8OC75-47-15-1PN	0	4.0	57	1.8	Granular	Mn nodule
+RP8OC75-47-16	9.038	-151.190	-4948	Box corer	RP8OC75-47-16-1PN	0	15.0	34	4.1	Granular	Mn nodule
+RP8OC75-47-18	9.080	-151.157	-5025	Box corer	RP8OC75-47-18-1PN	0	15.0	31	3.7	Smooth	Mn nodule
+RP8OC75-48-19	8.275	-151.122	-4942	Box corer	RP8OC75-48-19-1PN	0	1.0	46	0.4	Smooth	Mn nodule
+RP8OC75-48-20	8.238	-151.238	-4942	Box corer	RP8OC75-48-20-1PN	0	30.0	23	5.5	Smooth	Mn nodule
+RP8OC75-48-22	8.267	-151.188	-5014	Box corer	RP8OC75-48-22-1PN	0	1.0	57	0.5	Granular	Mn nodule
+RP8OC75-48-23	8.302	-151.158	-5040	Box corer	RP8OC75-48-23-1PN	0	1.0	0			Mn nodule
+RP8OC75-48-24	8.458	-150.778	-4927	Box corer	RP8OC75-48-24-1PN	0	1.0	24	0.2	Smooth	Mn nodule
+RP8OC75-49-25	8.475	-150.742	-4905	Box corer	RP8OC75-49-25-1PN	0	45.0	25	9.0	Smooth	Mn nodule
+RP8OC75-49-26	8.457	-150.837	-4872	Box corer	RP8OC75-49-26-1PN	0	40.0	32	10.2	Smooth	Mn nodule
+RP8OC75-49-27	8.503	-150.797	-4938	Box corer	RP8OC75-49-27-1PN	0	25.0	28	5.6	Mixture of smooth and granular	Mn nodule
+RP8OC75-50-28	8.695	-150.312	-4909	Box corer	RP8OC75-50-28-1PN	0	55.0	22	9.7	Smooth	Mn nodule
+RP8OC75-50-29	8.730	-150.312	-4933	Box corer	RP8OC75-50-29-1PN	0	55.0	26	11.4	Smooth	Mn nodule
+RP8OC75-50-30	8.685	-150.252	-4831	Box corer	RP8OC75-50-30-1PN	0	30.0	31	7.4	Smooth	Mn nodule
+RP8OC75-50-31	8.690	-150.250	-4870	Box corer	RP8OC75-50-31-1PN	0	10.0	31	2.5	Smooth	Mn nodule
+RP8OC75-50-32	8.718	-150.235	-4852	Box corer	RP8OC75-50-32-1PN	0	30.0	19	4.6	Smooth	Mn nodule
+RP8OC75-51-33	11.693	-139.183	-4785	Box corer	RP8OC75-51-33-1PN	0	2.0	61	1.0	Granular	Mn nodule
+RP8OC75-51-34	11.707	-139.180	-4828	Box corer	RP8OC75-51-34-1PN	0	7.0	71	4.0	Granular	Mn nodule
+RP8OC75-51-35	11.718	-139.148	-4817	Box corer	RP8OC75-51-35-1PN	0	0.0	0			Mn nodule
+RP8OC75-51-36	11.728	-139.137	-4817	Box corer	RP8OC75-51-36-1PN	0	1.0	20	0.2	Granular	Mn nodule
+RP8OC75-52-37	11.228	-139.165	-4778	Box corer	RP8OC75-52-37-1PN	0	1.0	20	0.2	Granular	Mn nodule
+RP8OC75-52-39	11.248	-139.090	-4831	Box corer	RP8OC75-52-39-1PN	0	5.0	90	3.6	Granular	Mn nodule
+RP8OC75-52-40	11.272	-139.070	-4765	Box corer	RP8OC75-52-40-1PN	0	3.0	41	1.0	Granular	Mn nodule
+RP8OC75-52-41	11.225	-139.128	-4756	Box corer	RP8OC75-52-41-1PN	0	0.0		0.0		Mn nodule
+RP8OC75-52-42	11.258	-139.055	-4871	Box corer	RP8OC75-52-42-1PN	0	0.0		0.0		Mn nodule
+RP8OC75-53-43	11.703	-138.390	-4997	Box corer	RP8OC75-53-43-1PN	0	0.0		0.0		Mn nodule
+RP8OC75-53-44	11.722	-138.373	-4902	Box corer	RP8OC75-53-44-1PN	0	0.5	7	0.0		Mn nodule
+RP8OC75-53-45	11.732	-138.370	-4887	Box corer	RP8OC75-53-45-1PN	0	3.0	80	1.9	Granular	Mn nodule
+RP8OC75-53-46	11.738	-138.353	-4833	Box corer	RP8OC75-53-46-1PN	0	0.0		0.0		Mn nodule
+RP8OC75-54-47	12.173	-137.735	-4833	Box corer	RP8OC75-54-47-1PN	0	37.0	48	14.2	Granular	Mn nodule
+RP8OC75-54-48	12.183	-137.683	-4833	Box corer	RP8OC75-54-48-1PN	0	5.0	58	2.3	Mixture of smooth and granular	Mn nodule
+RP8OC75-54-51	12.148	-137.743	-4837	Box corer	RP8OC75-54-51-1PN	0	35.0	56	15.7	Mixture of smooth and granular	Mn nodule
+RP8OC75-54-52	12.160	-137.707	-4855	Box corer	RP8OC75-54-52-1PN	0	25.0	69	13.8	Mixture of smooth and granular	Mn nodule
+RP8OC75-55-53	11.810	-137.472	-4765	Box corer	RP8OC75-55-53-1PN	0	5.0	16	0.6	Mixture of smooth and granular	Mn nodule
+RP8OC75-55-54	11.847	-137.445	-4737	Box corer	RP8OC75-55-54-1PN	0	10.0	56	4.5	Mixture of smooth and granular	Mn nodule
+RP8OC75-55-55	11.803	-137.438	-4759	Box corer	RP8OC75-55-55-1PN	0	22.0	76	13.4	Mixture of smooth and granular	Mn nodule
+RP8OC75-55-56	11.810	-137.405	-4800	Box corer	RP8OC75-55-56-1PN	0	35.0	62	17.4	Mixture of smooth and granular	Mn nodule
+RP6OC75-3-5	15.265	-126.640	-4675	Box corer	RP6OC75-3-5-1PN	0	50.0	25	10.0		Mn nodule
+RP6OC75-6-18	14.250	-126.192	-4430	Box corer	RP6OC75-6-18-1PN	0	60.0	54	25.9		Mn nodule
+RP6OC75-9-21	15.273	-126.160	-4630	Box corer	RP6OC75-9-21-1PN	0	60.0	18	8.6		Mn nodule
+RP6OC75-20-27	15.988	-126.193	-4702	Box corer	RP6OC75-20-27-1PN	0	62.0	15	7.4		Mn nodule
+RP6OC75-24B-29	14.257	-126.023	-4468	Box corer	RP6OC75-24B-29-1PN	0	62.0	43	21.3		Mn nodule
+RP6OC75-18A-32	15.248	-125.973	-4423	Box corer	RP6OC75-18A-32-1PN	0	10.0	17	1.4		Mn nodule
+RP6OC75-18A-33	15.233	-126.007	-4383	Box corer	RP6OC75-18A-33-1PN	0	47.0	13	4.9		Mn nodule
+RP6OC75-18A-34	15.237	-126.008	-4375	Box corer	RP6OC75-18A-34-1PN	0	65.0	15	7.8		Mn nodule
+RP6OC75-18B-37	15.203	-125.977	-4447	Box corer	RP6OC75-18B-37-1PN	0	37.0	26	7.7		Mn nodule
+RP6OC75-14-39	15.243	-126.493	-4581	Box corer	RP6OC75-14-39-1PN	0	57.0	14	6.3		Mn nodule
+RP6OC75-14-40	15.258	-126.485	-4500	Box corer	RP6OC75-14-40-1PN	0	47.0	24	9.0		Mn nodule
+RP6OC75-16B-43	15.758	-126.177	-4538	Box corer	RP6OC75-16B-43-1PN	0	62.0	27	13.4		Mn nodule
+RP6OC75-16B-45	15.748	-126.168	-4648	Box corer	RP6OC75-16B-45-1PN	0	30.0	22	5.3		Mn nodule
+RP6OC75-16B-48	15.752	-126.180	-4583	Box corer	RP6OC75-16B-48-1PN	0	5.0	19	0.8		Mn nodule
+RP6OC75-16B-49	15.778	-126.187	-4692	Box corer	RP6OC75-16B-49-1PN	0	35.0	23	6.4		Mn nodule
+RP6OC75-15B-50	15.760	-126.008	-4552	Box corer	RP6OC75-15B-50-1PN	0	50.0	21	8.4		Mn nodule
+RP6OC75-27-52	16.008	-124.993	-4376	Box corer	RP6OC75-27-52-1PN	0	40.0	19	6.1		Mn nodule
+RP6OC75-11-53	16.012	-126.772	-4603	Box corer	RP6OC75-11-53-1PN	0	55.0	12	5.3		Mn nodule
+RP8OC75-57-59	15.340	-125.902	-4625	Box corer	RP8OC75-57-59-1PN	0	0.0		0.0		Mn nodule
+RP8OC75-58-60	15.297	-125.473	-4298	Box corer	RP8OC75-58-60-1PN	0	60.0	16	7.7		Mn nodule
+RP8OC76-1-6	15.232	-125.973	-4380	Box corer	RP8OC76-1-6-1PN	0	20.0	31	5.1	Mixture of smooth and granular	Mn nodule
+RP8OC76-2-7	15.242	-126.043	-4539	Box corer	RP8OC76-2-7-1PN	0	60.0	29	13.9	Mixture of smooth and granular	Mn nodule
+RP8OC76-3-8	15.257	-125.988	-4363	Box corer	RP8OC76-3-8-1PN	0	10.0	23	1.8	Granular	Mn nodule
+RP8OC76-4-9	15.243	-126.027	-4490	Box corer	RP8OC76-4-9-1PN	0	45.0	26	9.4	Smooth	Mn nodule
+RP8OC76-5-10	15.217	-125.932	-4465	Box corer	RP8OC76-5-10-1PN	0	55.0	25	11.0	Mixture of smooth and granular	Mn nodule
+RP8OC76-6-11	15.182	-125.893	-4442	Box corer	RP8OC76-6-11-1PN	0	40.0	30	9.6	Mixture of smooth and granular	Mn nodule
+RP8OC76-7-12	15.205	-125.868	-4601	Box corer	RP8OC76-7-12-1PN	0	45.0	25	9.0	Granular	Mn nodule
+RP8OC76-8-13	15.207	-125.953	-4367	Box corer	RP8OC76-8-13-1PN	0	35.0	24	6.7	Mixture of smooth and granular	Mn nodule
+RP8OC76-10-15	15.190	-126.037	-4516	Box corer	RP8OC76-10-15-1PN	0	20.0	47	7.5	Mixture of smooth and granular	Mn nodule
+RP8OC76-11-16	15.195	-126.065	-4524	Box corer	RP8OC76-11-16-1PN	0	30.0	72	17.5	Granular	Mn nodule
+RP8OC76-12-18	15.193	-126.098	-4451	Box corer	RP8OC76-12-18-1PN	0	50.0	27	10.8	Mixture of smooth and granular	Mn nodule
+RP8OC76-13-19	15.137	-126.107	-4481	Box corer	RP8OC76-13-19-1PN	0	55.0	28	12.3	Granular	Mn nodule
+RP8OC76-14-20	15.137	-126.062	-4586	Box corer	RP8OC76-14-20-1PN	0	50.0	51	20.4	Mixture of smooth and granular	Mn nodule
+RP8OC76-15-21	15.140	-126.045	-4501	Box corer	RP8OC76-15-21-1PN	0	60.0	27	13.0	Mixture of smooth and granular	Mn nodule
+RP8OC76-16-22	15.132	-125.990	-4442	Box corer	RP8OC76-16-22-1PN	0	70.0	21	12.8	Smooth	Mn nodule
+RP8OC76-17-23	15.138	-125.955	-4376	Box corer	RP8OC76-17-23-1PN	0	30.0	27	6.5	Smooth	Mn nodule
+RP8OC76-18-24	15.105	-125.957	-4426	Box corer	RP8OC76-18-24-1PN	0	60.0	24	11.5	Smooth	Mn nodule
+RP8OC76-21-27	15.098	-126.035	-4522	Box corer	RP8OC76-21-27-1PN	0	60.0	34	16.3	Mixture of smooth and granular	Mn nodule
+RP8OC76-22-28	15.107	-126.047	-4641	Box corer	RP8OC76-22-28-1PN	0	45.0	52	18.7	Mixture of smooth and granular	Mn nodule
