@@ -96,7 +96,7 @@ Based on typical runs:
 
 ### Visualizations
 
-![Predicted Manganese Nodule Concentrations](predictions_screenshot.png)
+![Predicted Manganese Nodule Concentrations](outputs/result_screenshot.png)
 
 ## Study Area
 
