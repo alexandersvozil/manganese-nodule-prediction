@@ -94,6 +94,10 @@ Based on typical runs:
 - `outputs/predictions.html`: Predicted concentration heatmap
 - `outputs/model_metrics.txt`: Detailed performance metrics and feature importance
 
+### Visualizations
+
+![Predicted Manganese Nodule Concentrations](predictions_screenshot.png)
+
 ## Study Area
 
 The Pacific nodule province spans the Clarion-Clipperton Fracture Zone, known for extensive manganese nodule deposits. The study focuses on a region with historical survey coverage and suitable water depths for nodule formation.
