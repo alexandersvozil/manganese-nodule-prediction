@@ -107,7 +107,3 @@ The Pacific nodule province spans the Clarion-Clipperton Fracture Zone, known fo
 - Fewkes, R. H. (1980). Manganese nodule deposits in the North Pacific. *Marine Mining*, 2(1), 1-20.
 - Piper, D. Z., et al. (1979). The distribution of manganese nodules in the Pacific. *Marine Geology*, 32(1-2), 209-230.
 - GEBCO 2025: https://www.gebco.net/
-
-## License
-
-[Add appropriate license]
